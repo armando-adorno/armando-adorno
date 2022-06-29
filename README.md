@@ -5,4 +5,3 @@
 - 💡 Creative Mindset
 - 👀 Professional Experience: 
 - IT Business Analyst | Automation Specialist | Web Programmer | IT Support & Independent Developer
-     
