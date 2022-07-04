@@ -1,4 +1,4 @@
-# Computer Engineer specializing in Artificial Intelligence
+# Computer Engineer 
 - 💻 Computer Engineer specializing in Artificial Intelligence 
 - 👋 This profile was created to collaborate on projects and create professional networking
 - 🐍 Learning Python
