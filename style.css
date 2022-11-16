@@ -1,0 +1,913 @@
+/**! Main Menu */
+
+#hamburguer-menu
+{
+    visibility: hidden;
+}
+
+.primary-hyperlink:link /*^ Unvisited link*/
+{
+    text-decoration-line: none;
+    color: deepskyblue;
+    background-color: lightblue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10%;
+    border-color: darkblue;
+    margin: 4px;
+}
+.primary-hyperlink:visited /*^ Visited link*/
+{
+    text-decoration-line: none;
+    color: dodgerblue;
+    background-color: lightblue;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10%;
+    border-color: darkblue;
+    margin: 4px;
+}
+.primary-hyperlink:hover /*^ Pointer over link*/
+{
+    text-decoration-line: underline overline;
+    background-color: white;
+    border-radius: 10%;
+}
+.primary-hyperlink:active /*^ On Click Event link*/
+{
+    text-decoration-line: none;
+}
+
+/**! Header */
+
+body header
+{
+    background-color: #304480;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+body header h3
+{
+    color: #fff;
+}
+
+/**! Experience*/
+#exp-list
+{
+    display: none;
+}
+
+/**! Comp. Knowledge*/
+#comp-knowledge
+{
+    display: none;
+}
+
+/**! Footer */
+footer
+{
+    background-color: antiquewhite;
+}
+.contact-me .outer-brand
+{
+    height: 17px;
+    width: 45px;
+    margin-right: 10px;
+}
+.contact-me #copyrigth
+{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/*^ MOBILE PHONES DEVICES 👇🏻*/
+@media (orientation:portrait) and (width: 64px) and (height:96px) /**! No Good User Experience*/
+{
+    header, #menu-section, .menu
+    {
+        display: none;
+    }
+
+    /**! About Me */
+
+    .old-text
+    {
+        display: none; 
+    }
+    #armando-description
+    {
+        margin-bottom: 0px;
+    }
+    #armando-description:after
+    {
+        content: "Computer Engineer";
+        font-size: smaller;
+    }
+
+    /**! Prof. Exp.*/
+    .my-experience
+    {
+        display: none;
+    }
+
+    #pro-header:after
+    {
+        content: "Exp.";
+    }
+
+    /**! Computer System Knowledge*/
+    .proficiency-tech
+    {
+        display: none;
+    }
+
+     /**! Footer*/
+
+     footer
+     {
+        display:none;
+     }  
+}
+
+@media all and (min-width: 170px) and (max-width: 350px)
+{
+    header h3
+    {
+        font-size: small;
+        font-style: normal;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /*! Menu Section */
+
+    .primary-hyperlink
+    {
+        display: none;
+    }
+    #hamburguer-menu
+    {  
+        visibility: visible;
+        position: absolute;
+        z-index: initial;
+        left: 10px;
+        top: 80px;
+    }
+
+    /*! About Me Section */
+    #armando-description
+    {
+        font-size: small;
+    }
+
+    /*! My Experience Section*/
+    .old-text
+    {
+        display: none;
+    }
+    #pro-header::after
+    {
+        content: "Experience";
+    }
+
+    .data-table
+    {
+        display: none;
+    }
+
+    #exp-list
+    {
+        display:list-item;
+    }
+    #exp-list li
+    {
+        list-style: symbols(cyclic "👨🏻‍💻");
+        font-size: small;
+        font-weight: normal;
+        margin-bottom: 12px;
+    }
+
+    /*! Computer Knowledge Section*/
+    #comp-header:after
+    {
+        content: "Comp. Skills";
+    }
+    #comp-knowledge
+    {
+        display: list-item;
+    }
+    #comp-knowledge li
+    {
+        list-style: symbols(cyclic "💻");
+        font-size: small;
+        font-weight: normal;
+        margin-bottom: 12px;
+    }
+
+    footer
+    {
+        background-color:antiquewhite;
+    }
+  
+}
+
+@media all  and (min-width: 351px) and (max-width:499px)
+{
+    /*TODO Generic*/
+
+    /** Table*/
+    .data-table
+    {
+        border-style: groove;
+        width: 100%;
+    }
+    .data-table th
+    {
+        background-color: cyan;
+    }
+    .data-table ul
+    {
+        padding-left: 3px;
+        list-style: none;
+    }
+
+    /**TODO Menu*/
+    #menu-section
+    {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    /**TODO About Me*/
+  
+    #about-header
+    {
+        background-color: aquamarine;
+    }
+    .about-text
+    {
+        text-align: center;
+    }
+    .overlay-container
+    {
+      position: relative;
+      width: 100%;
+    }
+    #armando-img
+    {
+      display: block;
+      width: 50%;
+      height: 50%;
+      margin-right: auto;
+      margin-left: auto;
+      right: 0;
+    }
+
+    .overlay-img
+    {
+        display: block;
+        width: 50%;
+        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        right: 0;
+    }
+
+    .overlay
+    {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 0%;
+      transition: 2s ease;
+    }
+
+    .overlay-container:hover .overlay
+   {
+     bottom: 0;
+     height: 100%;
+   }
+
+    /**todo Professional Experience*/
+   
+    .my-experience h4
+    {
+        text-align: center;
+        background-color: #aae8fc;
+    }
+       
+    .industry-type, .org-role, .role-desc
+    {
+        border-style: groove;
+        border-width: 1px;
+        border-left: none;
+        border-bottom: none;
+        text-align: center;
+    }
+    .role-desc
+    {
+        margin-bottom: 4px;
+    }
+   
+    /**TODO Computer Proficiency*/
+    #comp-header
+    {
+        text-align: center;
+        background-color: lightblue;
+    }
+    .layer-cell
+    {
+        text-align: center;
+    }
+    .proficiency-cell
+    {
+        padding-left: 3px;
+    }
+    .layer-cell, .proficiency-cell
+    {
+        border-style: groove;
+        border-width: 1px;
+        border-left: none;
+        border-bottom: none;
+    }
+    .proficiency-h6
+    {
+        text-align: center;
+        border-style: ridge;
+        border-width: 1px;
+        width: 100%;
+        background-color: lightcyan;
+    }
+    .sub-table
+    {
+        width: 100%;
+    }
+   
+
+    /**TODO Footer*/
+    body footer
+    {
+        margin-top: 5%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: antiquewhite;
+    }
+    .heading-element-f, .parragraph-element-f
+    {
+        text-align: center;
+    }
+    .contact-me
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #copyrigth
+    {
+        text-align: center;
+    }
+  
+}
+
+@media all and (min-width: 500px) and (max-width: 1000px)
+{
+    /*TODO: Generic*/
+
+    .small-viewport
+    {
+        display: none; /*Erase the button element (hamburguer) menu*/
+    }
+    /** Table*/
+
+    .data-table
+    {
+        border-style: groove;
+        width: 100%;
+    }
+    .data-table th
+    {
+        background-color: cyan;   
+    } 
+    .data-table ul
+    {
+        list-style: none;
+        padding-left: 3px;
+    }
+
+    /*TODO Menu*/
+    #menu-section
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*TODO About Me*/
+
+    #about-header
+    {
+        text-align: center;
+        background-color: aquamarine;
+    }
+    .overlay-container
+    {
+        position: relative;
+        width: 100%;
+    }
+    #armando-img
+    {
+        display: block;
+        width: 35%;
+        height: 35%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .overlay-img
+    {
+        display: block;
+        width: 35%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .overlay
+    {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 0%;
+        transition: 2s ease;
+    }
+    .overlay-container:hover .overlay
+    {
+
+        bottom: 0;
+        height: 100%;
+    }
+
+    /*TODO Professional Experience*/
+    #pro-header
+    {
+        text-align: center;
+        background-color: #aae8fc;
+    }
+    .industry-type
+    {
+        border-style: groove;
+        border-width: 1px;
+        border-left: none;
+        border-bottom: none;
+        text-align: center;
+    }
+    .org-role
+    {
+        border-style: groove;
+        border-width: 1px;
+        border-left: none;
+        border-bottom: none;
+        text-align: center;
+    }
+    .role-desc
+    {
+        border-style: groove;
+        border-width: 1px;
+        border-left: none;
+        border-bottom: none;
+    }
+
+    /*TODO Computer Proficiency*/
+
+    #comp-header
+    {
+        text-align: center;
+        background-color: lightblue;
+    }
+    .layer-cell
+    {
+        text-align: center;
+    }
+    .proficiency-cell
+    {
+        padding-left: 3px;
+    }
+    .layer-cell, .proficiency-cell
+    {
+        border-style: groove;
+        border-width: 1px;
+        border-left: none;
+        border-bottom: none;
+    }
+    .proficiency-h6
+    {
+        text-align: center;
+        border-style: ridge;
+        border-width: 1px;
+        width: 100%;
+        background-color: lightcyan;
+    }
+    .sub-table
+    {
+        width: 100%;
+    }
+
+    /*TODO Footer*/
+
+    .heading-element-f, .parragraph-element-f
+    {
+        text-align: center;
+    }
+    .contact-me
+    {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #copyrigth
+    {
+        text-align: center;
+    }
+
+
+   
+}
+
+@media all and (min-width:1000px) and (max-width: 1689px)
+{
+    /*TODO: Generic*/
+    .small-viewport
+    {
+        display: none;
+    }
+    .data-table
+    {
+        border-style: groove;
+        width: 100%;
+    }
+    table thead tr th
+    {
+        background-color: cyan;
+        width: 30%;
+    }
+
+    /*TODO:  Main Menu*/
+
+    #menu-section
+    {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    #hamburguer-menu /** Hamburguer Icon Button Element Removed*/
+    {
+        display: none;
+    }
+
+    /*TODO: About Me*/
+
+    .about-me #about-header
+    {
+        background-color: aquamarine;
+    }
+    .about-text
+    {
+        text-align: center;
+    }
+    .overlay-container 
+    {
+        position: relative;
+        width: 100%;
+    }
+    #armando-img
+    {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        right: 0;
+    }
+    .overlay-img
+    {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        right: 0;
+    }
+    .overlay
+    {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 0%;
+        transition: 2s ease;
+    }
+    .overlay-container:hover .overlay
+    {
+        bottom: 0;
+        height: 100%;
+    }
+
+    /*TODO: Professional Experience*/
+    #pro-header
+    {
+        text-align: center;
+        background-color: #aae8fc;
+    }
+    .exp-th
+    {
+        width: 25%;
+    }
+    #exp-desc-th
+    {
+        width: 50%;
+    }
+    .data-table .industry-type, .data-table .org-role
+    {
+        text-align: center;
+    }
+    .data-table .experience-details
+    {
+        list-style: none ;
+        margin-bottom: 5px;
+    }
+
+    /*TODO: Computer System Knowledge*/
+    #comp-header
+    {
+        text-align: center;
+        background-color: lightblue;
+    }
+    .knowledge-th
+    {
+        padding-top: 50%;
+        padding-bottom: 50%;
+    }
+    .layer-cell
+    {
+        text-align: center;
+        border-style: groove;
+        border-width: 1px;
+        border-left: none;
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+    .proficiency-cell
+    {
+        border-style: groove;
+        border-width: 1px;
+        border-left: none;
+        border-bottom: none;
+    }
+    .proficiency-details
+    {
+        list-style: none;
+        margin-bottom: 5px;
+        text-align: left;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .proficiency-h6
+    {
+        text-align: center;
+        border-style: ridge;
+        border-width: 1px;
+        width: 100%;
+        background-color:lightcyan;
+    }
+    .unordered-details
+    {
+        padding-left: 0px;
+    }
+    /** Sub Table 👇🏻*/
+    .sub-table
+    {
+        width: 100%;
+    }
+    .proficiency-details-sub
+    {
+        list-style: none;
+    }
+
+    /*TODO: Footer */
+    .heading-element-f, .parragraph-element-f
+    {
+        text-align: center;
+    }
+    .contact-me
+    {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #copyrigth
+    {
+        text-align: center;
+    }
+    
+}
+
+@media all and (min-width: 1700px)
+{
+    /*TODO: Generic*/
+    .about-me, .my-experience, .proficiency-tech
+    {
+        display: inline;
+        float: left;
+        width: 30%;
+    }
+    .small-viewport
+    {
+        display: none;
+    }
+    .data-table
+    {
+        border-style: groove;
+        width: 100%;
+    }
+    table thead tr th
+    {
+        background-color: cyan;
+        width: 30%;
+    }
+
+    /*TODO:  Main Menu*/
+
+    #menu-section
+    {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    #hamburguer-menu /** Hamburguer Icon Button Element Removed*/
+    {
+        display: none;
+    }
+
+    /*TODO: About Me*/
+
+    .about-me #about-header
+    {
+        background-color: aquamarine;
+    }
+    .about-text
+    {
+        text-align: center;
+    }
+    .overlay-container 
+    {
+        position: relative;
+        width: 100%;
+    }
+    #armando-img
+    {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        right: 0;
+    }
+    .overlay-img
+    {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        right: 0;
+    }
+    .overlay
+    {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 0%;
+        transition: 2s ease;
+    }
+    .overlay-container:hover .overlay
+    {
+        bottom: 0;
+        height: 100%;
+    }
+
+    /*TODO: Professional Experience*/
+    #pro-header
+    {
+        text-align: center;
+        background-color: #aae8fc;
+    }
+    .exp-th
+    {
+        width: 25%;
+    }
+    #exp-desc-th
+    {
+        width: 50%;
+    }
+    .data-table .industry-type, .data-table .org-role
+    {
+        text-align: center;
+    }
+    .data-table .experience-details
+    {
+        list-style: none ;
+        margin-bottom: 5px;
+    }
+
+    /*TODO: Computer System Knowledge*/
+    #comp-header
+    {
+        text-align: center;
+        background-color: lightblue;
+    }
+    .knowledge-th
+    {
+        padding-top: 50%;
+        padding-bottom: 50%;
+    }
+    .layer-cell
+    {
+        text-align: center;
+        border-style: groove;
+        border-width: 1px;
+        border-left: none;
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+    .proficiency-cell
+    {
+        border-style: groove;
+        border-width: 1px;
+        border-left: none;
+        border-bottom: none;
+    }
+    .proficiency-details
+    {
+        list-style: none;
+        margin-bottom: 5px;
+        text-align: left;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .proficiency-h6
+    {
+        text-align: center;
+        border-style: ridge;
+        border-width: 1px;
+        width: 100%;
+        background-color:lightcyan;
+    }
+    .unordered-details
+    {
+        padding-left: 0px;
+    }
+    /** Sub Table 👇🏻*/
+    .sub-table
+    {
+        width: 100%;
+    }
+    .proficiency-details-sub
+    {
+        list-style: none;
+    }
+
+    /*TODO: Footer */
+    .footer
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+    .heading-element-f, .parragraph-element-f
+    {
+        text-align: center;
+    }
+    .contact-me
+    {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #copyrigth
+    {
+        text-align: center;
+    }
+    
+}
