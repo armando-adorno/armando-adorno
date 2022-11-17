@@ -1,4 +1,4 @@
-/**! Main Menu */
+/**TODO Main Menu */
 
 #hamburguer-menu
 {
@@ -38,7 +38,7 @@
     text-decoration-line: none;
 }
 
-/**! Header */
+/**TODO Header */
 
 body header
 {
@@ -51,24 +51,30 @@ body header h3
     color: #fff;
 }
 
-/**! Experience*/
+/*TODO About*/
+#ext-links /*! Element will be displayed only of larger screens (TV,Monitors) viewports*/
+{
+    display: none;
+}
+
+/**TODO Experience*/
 #exp-list
 {
     display: none;
 }
 
-/**! Comp. Knowledge*/
+/**TODO Comp. Knowledge*/
 #comp-knowledge
 {
     display: none;
 }
 
-/**! Footer */
+/**TODO Footer */
 footer
 {
     background-color: antiquewhite;
 }
-.contact-me .outer-brand
+.contact-me .outer-brand, #ext-links .outer-brand
 {
     height: 17px;
     width: 45px;
@@ -539,7 +545,7 @@ footer
    
 }
 
-@media all and (min-width:1000px) and (max-width: 1689px)
+@media all and (min-width:1000px) and (max-width: 1700px)
 {
     /*TODO: Generic*/
     .small-viewport
@@ -805,6 +811,13 @@ footer
         bottom: 0;
         height: 100%;
     }
+    #ext-links
+    {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
 
     /*TODO: Professional Experience*/
     #pro-header
@@ -894,6 +907,7 @@ footer
         bottom: 0;
         width: 100%;
         left: 0;
+        display: none;
     }
     .heading-element-f, .parragraph-element-f
     {
