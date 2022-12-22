@@ -1,20 +1,21 @@
+<!--! Copyrights © Armando Adorno-->
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>💻 Computer Engineer - Armando Home</title>
     <link href = "style.css" rel = "stylesheet"></link>
-    <link href = "/main.js" rel = "JavaScript">
     <meta name = "viewport" content= "width=device-width, initial-scale = 1">
 </head>
 
-<body onload = "alert('This Website is in development')">
+<body>
 
     <header>
 
         <h3>Armando Portfolio</h3>
 
     </header>
+
     
     <div id = "menu-section">
 
@@ -28,17 +29,17 @@
                 <strong>Home</strong>
             </a> <!--^ Point to Armando Home Page.-->
 
-            <a href = "portfolio.html" class = "primary-hyperlink" hidden>
+            <a href = "portfolio.html" class = "primary-hyperlink">
                 <strong>Portfolio</strong>
             </a>  <!--^ Point to Armando Professional Portfolio.-->
 
-            <a href = "training.html" class = "primary-hyperlink" hidden>
-                <strong>Training</strong>
-            </a>  <!--^ Point to Armando Training.-->
+            <a href = "contact.html" class = "primary-hyperlink" hidden>
+                <strong>Contact</strong>
+            </a>
                 
         </nav>
 
-    </div> <!--~  Closing tag of main menu section-->
+    </div> <!--! Main menu container 👆🏻-->
 
     <div class = "about-me"> <!--* Start of About Me Section-->
 
@@ -77,7 +78,6 @@
                  <a class = "secondary-hyperlink" href = "https://github.com/armando-adorno">
                     <img src = "media/Octocat.png" alt = "GitHub logo" class = "outer-brand">
                  </a> 
-
 
             </div>
         
@@ -159,7 +159,22 @@
 
                 <tr>
 
-                    <td class = "industry-type">Software</td>
+                    <td class = "industry-type">Tech.</td>
+                    <td class = "org-role"><strong>Software Developer</strong></td>
+                    <td class = "role-desc">
+                        <ul>
+                            <li class = "experience-details">👨🏻‍💻 Contributed to a web app (MCV)</li> 
+                            <li class = "experience-details">👨🏻‍💻 Created visual reports of the app.</li>     
+                            <li class = "experience-details">👨🏻‍💻 Virtual Machines</li>               
+                        </ul>
+                    </td>
+
+
+                </tr>
+
+                <tr>
+
+                    <td class = "industry-type">Tech</td>
                     <td class = "org-role"><strong>Software Developer</strong></td>
                     <td class = "role-desc">
                         <ul>
@@ -413,11 +428,13 @@
 
         </div>
     
-        <p id = "copyrigth">© 2023 Armando</p>
+        <p id = "copyrigth">© 2023 Armando Adorno</p>
      
     </footer>
 
     </div>
+
+    <script src = "main.js"></script>
     
 </body>
 </html>

@@ -1,0 +1,394 @@
+<!--! Copyrights © Armando Adorno-->
+<!DOCTYPE html>
+<html>
+
+    <head> <!--Document Metadata-->
+        <title>💻 Computer Engineer - Armando Portfolio </title>
+        <link href = "portfolio.css" rel = "stylesheet"></link>
+        <meta name = "viewport" content= "width=device-width, initial-scale = 1">
+    </head>
+
+    <body id = "document-container">
+
+        <div class = "main-menu">
+
+            <nav class = "menu">
+
+                <a href = "index.html" class = "primary-hyperlink">
+                    <strong>Home</strong>
+                </a> <!--^ Point to Armando Home Page-->
+
+                <a href = "#" class = "primary-hyperlink">
+                    <strong>Portfolio</strong>
+                </a>  <!--^ Point to Armando Training.-->
+
+                <a href = "contact.html" class = "primary-hyperlink" hidden>
+                   <strong>Contact</strong>
+                </a>
+                
+            </nav>
+
+        </div> <!--*  Closing tag of main menu section-->
+
+        <!--! Sidebar Hamburguer Menu Icon Hidden By Default-->
+        <span onclick = "openNav()" id = "sidebar-hamburguer">&#9776</span>
+        
+        <!--! Sidebar Menu 👇🏻-->
+        <div class = "sidebar-training" id="sidebar">
+
+            <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+
+            <div class = "main-menu-sm"> <!--! Only for small viewports the main menu is shown inside the sidebar-->
+
+                <a href = "index.html" class = "primary-hyperlink">
+                    <strong>Home</strong>
+                </a> <!--^ Point to Armando Home Page-->
+    
+                <a href = "portfolio.html" class = "primary-hyperlink">
+                    <strong>Portfolio</strong>
+                </a>  <!--^ Point to Armando Professional Portfolio.-->
+    
+                <a href = "contact.html" class = "primary-hyperlink" id = "contactLink">
+                    <strong>Contact</strong>
+                </a>
+    
+            </div>
+
+            <a href = "#" onclick = "displayAI()">
+
+                <img src = "/media/ai-robot.png" alt = "AI icon" class = "sidebar-extlogo">
+                 AI
+            </a>
+
+            <a href = "#" onclick = "displayWeb()">
+
+                <img src = "/media/web-dev-icon.png" alt = "Web dev icon" class = "sidebar-extlogo">
+                 Web Dev.
+            </a>
+
+            <a href = "#" id = "python-training" onclick = "displayPython()">
+
+                <img src = "/media/python-logo-only.png" alt = "Python logo" class = "sidebar-extlogo">
+                 Python
+            </a>
+
+            <a href = "#" onclick = "displayDrones()">
+
+                <img src = "/media/drone-5g.png" alt = "UAV icon" class = "sidebar-extlogo">
+                 UAV
+            </a>
+
+        </div>
+        <!--! Sidebar Menu 👆🏻-->
+        
+        <!--! Main content👇🏻 -->
+        <div class = "main-content" id = "principal-content">
+
+            <h3 class = "portfolio-header" id = "main-header">Portfolio</h3>
+
+            <!--! Default container node 👇🏻-->
+            <div id = "default">
+
+                <p class = "portfolioP" id = "defaultP">
+                    A catalog of my professional projects will be shown to expose technical experience in different
+                    disciplines within the technology industry 🔑. In addition, the advances regarding my specialization in 
+                    <em>Artificial Intelligence</em> will be exposed on this site. Below is a summary of technical experience(proficiency) 👇🏻.
+
+                    <h5>Summary 📖</h5>
+                    <!--* Details of full stack web developer professional exposure 👇🏻-->
+
+                    <details class = "summaryDetails">
+                        <summary onclick = "closeNav()">Network Engineering</summary>
+                        <ul>
+                            <li>Network Design (physical & logical)</li>
+                            <li>Network Documentation</li>
+                        </ul>
+                    </details>
+
+                    <details class = "summaryDetails">
+                        <summary onclick = "closeNav()">IT Systems</summary>
+                        <ul>
+                            <li>Control Access</li>
+                            <li>CCTV</li>
+                        </ul>
+                    </details>
+
+                    <details class = "summaryDetails">
+                        <summary onclick = "closeNav()">IoT</summary>
+                        <ul>
+                            <li>UAV</li>
+                        </ul>
+                    </details>
+
+                    <details class = "summaryDetails">
+                        <summary onclick = "closeNav()">Full Stack Web Development</summary>
+
+                       <table class = "summaryTable">
+
+                        <thead>
+
+                            <tr>
+                                <td class = "summaryFrontEnd" id = "summaryCol1a">Front End</td>
+                                <td class = "summaryBackEnd" id = "summaryCol2a">Back End</td>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+                            <tr>
+
+                                <td class = "summaryFrontEnd" id = "summaryCol1b">
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>HTML DOM</li>
+                                        <li>XML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>JSON</li>
+                                        <li>Boostrap(framework)</li>
+                                        <li>React(framework)</li>
+                                    </ul>
+                                </td>
+
+                                <td class = "summaryBackEnd" id = "summaryCol2b">
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>PHP</li>
+                                        <li>REST</li>
+                                        <li>SQL</li>
+                                    </ul>
+
+                                </td>
+
+                            </tr>
+                        </tbody>
+                        
+
+                       </table>
+   
+                    </details>
+                    <!--* Details of full stack web developer professional exposure 👆🏻-->
+
+                    <details class = "summaryDetails">
+                        <summary onclick = "closeNav()">Software Engineering</summary>
+                        <ul>
+                            <li>Windows OS</li>
+                            <li>Linux OS</li>
+                            <li>MacOS</li>
+                            <li>Android OS</li>
+                            <li>Version Control (git,etc.)</li>
+                            <li>Software Development Life Cycle</li>
+                            <li>Product Technical Documentation</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>Data Structures</li>
+                        </ul>
+                    </details>
+
+                    <details class = "summaryDetails">
+                     
+                        <summary onclick = "closeNav()">Hardware Engineering</summary>
+                        <ul>
+                            <li>VHDL</li>
+                            <li>Assembly language</li>
+                            <li>Microprocesors</li>
+                            <li>Hardware Virtualization</li>
+                        </ul>
+                    </details>
+
+                    <details class = "summaryDetails">
+                        <summary onclick = "closeNav()">Process Control</summary>
+                        <ul>
+                            <li>PLC</li>
+                        </ul>
+                    </details>
+                        
+                    <details class = "summaryDetails">
+                        <summary onclick = "closeNav()">Mathematics/Physics</summary>
+                        <ul>
+                            <li>Calculus I</li>
+                            <li>Calculus II</li>
+                            <li>Calculus III</li>
+                        </ul>
+                    </details>
+
+            </div>
+            <!--! Default container node 👆🏻-->
+
+             <!--! Artificial Intelligence container node 👇🏻-->
+             <div id = "artificialIntelligence">
+
+                <audio id = "aiAudio">
+
+                    <source src = "/media/infinity_audio.mp3">
+
+                </audio>
+
+                <p class = "portfolioP">Artificial Intelligence is a complex discipline that involves
+                    intelligence emulation of computers shown in multicellular living organisms like homo-sapiens for example. As a <em>Computer Engineer</em> experienced
+                    in other technological areas, my specialization will be within the field of <em>Artificial Intelligence.</em> 
+                </p>
+
+                <button type = "button" onclick = "playAI()" id = "aiPlayAudio">Play Audio</button>
+
+                <button type = "button" onclick = "pauseAI()" id = "aiPauseAudio">Pause Audio</button>
+
+             </div>
+             <!--! Artificial Intelligence container node 👆🏻-->
+
+             <!--! Web Development container node 👇🏻-->
+             <div id = "webDev">
+
+             </div>
+
+            <!--! Python container node 👇🏻-->
+            <div id = "python">
+
+                <details>
+
+                    <summary>Caesar Cipher</summary>
+
+                    <script src="https://gist.github.com/armando-adorno/ddb252b6aabcdd5e41e2f1a66dfebfcd.js"></script>
+
+                    
+
+                </details>
+                
+                <p class = "portfolioP">
+                    Software that can decode or encode a user <var class = "codeVar">string</var> value with a basic
+                    encryption algorithm.
+                </p> <hr>
+
+                <details>
+
+                    <summary>"Secret" Bid Auction</summary>
+
+                    <script src="https://gist.github.com/armando-adorno/76811f08c9f500338b0ccbee64be29de.js"></script>
+
+                </details>
+
+                <p class = "portfolioP">
+                    Multiple clients place a bid for the purchase of an asset. The client with the highest bid is declared the winner.
+                </p> <hr>
+
+                <details>
+                    <summary>Calculator</summary>
+                    <script src="https://gist.github.com/armando-adorno/6271863f103a77753265b5cdd8c2befc.js"></script>
+                    
+                </details>
+
+                <p class = "portfolioP">
+                    Calculator software.
+                </p> <hr>
+
+                <details>
+                    <summary>Vending Machine</summary>
+                    <script src="https://gist.github.com/armando-adorno/c8a007828d6f4bbc2afab8370075ad29.js"></script>
+                </details>
+
+                <p class = "portfolioP">
+                    Vending Machine software that create (process) a coffee product based on the client choice after
+                    scanning the availavility of internal resources and the correct amount of currency input by the client. 
+                </p> <hr>
+
+                  
+
+            </div>
+            <!--! Python container node 👆🏻-->
+
+            <!--! Drones container node 👇🏻 --> 
+            <div id = "uav-operations">
+
+                <!--^ Audio file playable in the background-->
+                <audio id = "techDroneAudio">
+
+                    <source src = "/media/tech_background_audio.mp3">
+
+                </audio>
+  
+                <h5 class = "carouselHeader" id = "carouselHeader1">Professional Photography</h5>
+
+                <div class = "ruralArea1">
+
+                    <img src = "/media/rural-view-1.png" alt = "rural image" class = "carousel-img">
+
+                </div>
+
+                <div class = "ruralArea1">
+
+                    <img src = "/media/rural-view-2.png" alt = "rural image" class = "carousel-img">
+
+                </div>
+
+                <a class = "prev" onclick = "plusSlides(-1,0)">&#10094</a>
+                <a class = "next" onclick = "plusSlides(1,0)">&#10095</a>
+
+                <p class = "portfolioP">Aerial images from a professional drone in a rural environment.
+                    
+                        <em>More content will be soon available 😊</em>
+                   
+                </p>
+
+                <button type = "button" onclick = "playDroneAudio()" id = "dronesPlayAudio">Play Audio</button>
+
+                <button type = "button" onclick = "pauseDroneAudio()" id = "dronesPauseAudio">Pause Audio</button>
+
+            </div>
+             <!--! Drone container node 👆🏻 --> 
+
+        </div>
+        <!--! Main content 👆🏻 -->
+
+        <footer class = "document-footer" id = "portfolioFooter">
+
+            <div class = "site-about">
+        
+                <h4 class = "heading-element-f">About This Site</h4>
+
+                <p class = "parragraph-element-f">Professional portfolio of Armando Adorno with content on his projects, tech stack, and progress.</p>
+
+            </div>
+
+            <div class = "contact-me"> <!--* Ext. Soft. Hyperlinks-->
+
+    
+                <a class = "secondary-hyperlink" href = "https://www.linkedin.com/in/engineer-armando/">
+                    <img src = "/media/LinkedIn-Blue-128-Γö¼┬½@2x.png" alt = "Linkedin logo" class = "outer-brand">
+                </a>
+    
+                <a class = "secondary-hyperlink" href = "https://app.joinhandshake.com">
+                    <img src = "/media/handshake_icon.png" alt = "Handshake logo" class = "outer-brand">
+                </a>
+    
+                <a class = "secondary-hyperlink" href = "https://github.com/armando-adorno">
+                    <img src = "/media/Octocat.png" alt = "GitHub logo" class = "outer-brand">
+                </a>
+
+            </div>
+    
+            <p id = "copyrigth">© 2023 Armando Adorno</p>
+     
+        </footer>
+
+        <script src = "main.js"></script>
+
+    </body>
+
+</html>
+
+<!--
+
+  DAY 8: CAESAR CIPHER
+   <script src="https://gist.github.com/armando-adorno/ddb252b6aabcdd5e41e2f1a66dfebfcd.js"></script>
+
+  DAY 9: SECRET AUCTION
+   <script src="https://gist.github.com/armando-adorno/76811f08c9f500338b0ccbee64be29de.js"></script> 
+
+  DAY 10: CALCULATOR
+   <script src="https://gist.github.com/armando-adorno/6271863f103a77753265b5cdd8c2befc.js"></script>   
+
+  DAY 15: COFFEE MACHINE
+   <script src="https://gist.github.com/armando-adorno/c8a007828d6f4bbc2afab8370075ad29.js"></script>  
+
+-->

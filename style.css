@@ -44,7 +44,7 @@ body header
 {
     background-color: #304480;
     padding: 10px 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 body header h3
 {
@@ -73,6 +73,7 @@ body header h3
 footer
 {
     background-color: antiquewhite;
+   
 }
 .contact-me .outer-brand, #ext-links .outer-brand
 {
@@ -352,7 +353,6 @@ footer
         width: 100%;
     }
    
-
     /**TODO Footer*/
     body footer
     {
@@ -541,8 +541,6 @@ footer
         text-align: center;
     }
 
-
-   
 }
 
 @media all and (min-width:1000px) and (max-width: 1700px)
@@ -824,6 +822,10 @@ footer
     {
         text-align: center;
         background-color: #aae8fc;
+    }
+    #exp-table
+    {
+        border-right: none;
     }
     .exp-th
     {
