@@ -54,28 +54,34 @@
     
             </div>
 
+            <a href = "#" onclick = "displayNet()">
+
+                <img src = "media/computer-network-icon.png" alt = "Network icon" class = "sidebar-extlogo">
+                 Network
+            </a>
+
             <a href = "#" onclick = "displayAI()">
 
-                <img src = "/media/ai-robot.png" alt = "AI icon" class = "sidebar-extlogo">
+                <img src = "media/ai-robot.png" alt = "AI icon" class = "sidebar-extlogo">
                  AI
             </a>
 
             <a href = "#" onclick = "displayWeb()">
 
-                <img src = "/media/web-dev-icon.png" alt = "Web dev icon" class = "sidebar-extlogo">
+                <img src = "media/web-dev-icon.png" alt = "Web dev icon" class = "sidebar-extlogo">
                  Web Dev.
             </a>
 
             <a href = "#" id = "python-training" onclick = "displayPython()">
 
-                <img src = "/media/python-logo-only.png" alt = "Python logo" class = "sidebar-extlogo">
+                <img src = "media/python-logo-only.png" alt = "Python logo" class = "sidebar-extlogo">
                  Python
             </a>
 
-            <a href = "#" onclick = "displayDrones()">
+            <a href = "#" onclick = "displayIoT()">
 
-                <img src = "/media/drone-5g.png" alt = "UAV icon" class = "sidebar-extlogo">
-                 UAV
+                <img src = "media/drone-5g.png" alt = "UAV icon" class = "sidebar-extlogo">
+                 IoT
             </a>
 
         </div>
@@ -163,7 +169,6 @@
                             </tr>
                         </tbody>
                         
-
                        </table>
    
                     </details>
@@ -216,12 +221,31 @@
             </div>
             <!--! Default container node 👆🏻-->
 
+            <!--! Computer Networks Node 👇🏻-->
+            <div id = "computerNetworks">
+
+                <div class = "logicalTopology">
+
+                    <img src = "media/autonomous_system.png" alt = "autonomus network" class = "netDesign">
+                    <p class = "netDescription">Computer Networks prototypes at the logical level. The design of a network infrastructure
+                        is <em class = "netEmphasis">important</em> because helps efficient planning and support before implementation which enables efficient network scalability, which leads to cost 
+                        reduction in the future. <em class = "netEmphasis">Not planning the proper implementation of a computer network is like building a bridge
+                            without beams (in the long term it falls down).</em>
+                    </p>
+ 
+                </div>
+
+            
+            </div>
+
+            <!--! Computer Network Node 👆🏻-->
+
              <!--! Artificial Intelligence container node 👇🏻-->
              <div id = "artificialIntelligence">
 
                 <audio id = "aiAudio">
 
-                    <source src = "/media/infinity_audio.mp3">
+                    <source src = "media/infinity_audio.mp3">
 
                 </audio>
 
@@ -230,15 +254,21 @@
                     in other technological areas, my specialization will be within the field of <em>Artificial Intelligence.</em> 
                 </p>
 
-                <button type = "button" onclick = "playAI()" id = "aiPlayAudio">Play Audio</button>
+                <div class = "audioButtons">
 
-                <button type = "button" onclick = "pauseAI()" id = "aiPauseAudio">Pause Audio</button>
+                    <button type = "button" onclick = "playAI()" id = "aiPlayAudio" class = "backgroundAudio">Play Audio</button>
+
+                    <button type = "button" onclick = "pauseAI()" id = "aiPauseAudio" class = "backgroundAudio">Pause Audio</button>
+
+                </div>
 
              </div>
              <!--! Artificial Intelligence container node 👆🏻-->
 
              <!--! Web Development container node 👇🏻-->
              <div id = "webDev">
+
+                <embed src = "media/SmartVote Poster.pdf">
 
              </div>
 
@@ -250,8 +280,6 @@
                     <summary>Caesar Cipher</summary>
 
                     <script src="https://gist.github.com/armando-adorno/ddb252b6aabcdd5e41e2f1a66dfebfcd.js"></script>
-
-                    
 
                 </details>
                 
@@ -292,8 +320,6 @@
                     scanning the availavility of internal resources and the correct amount of currency input by the client. 
                 </p> <hr>
 
-                  
-
             </div>
             <!--! Python container node 👆🏻-->
 
@@ -303,7 +329,7 @@
                 <!--^ Audio file playable in the background-->
                 <audio id = "techDroneAudio">
 
-                    <source src = "/media/tech_background_audio.mp3">
+                    <source src = "media/tech_background_audio.mp3">
 
                 </audio>
   
@@ -311,13 +337,13 @@
 
                 <div class = "ruralArea1">
 
-                    <img src = "/media/rural-view-1.png" alt = "rural image" class = "carousel-img">
+                    <img src = "media/rural-view-1.png" alt = "rural image" class = "carousel-img">
 
                 </div>
 
                 <div class = "ruralArea1">
 
-                    <img src = "/media/rural-view-2.png" alt = "rural image" class = "carousel-img">
+                    <img src = "media/rural-view-2.png" alt = "rural image" class = "carousel-img">
 
                 </div>
 
@@ -330,9 +356,13 @@
                    
                 </p>
 
-                <button type = "button" onclick = "playDroneAudio()" id = "dronesPlayAudio">Play Audio</button>
+                <div class = "audioButtons">
 
-                <button type = "button" onclick = "pauseDroneAudio()" id = "dronesPauseAudio">Pause Audio</button>
+                    <button type = "button" onclick = "playDroneAudio()" id = "dronesPlayAudio" class = "backgroundAudio">Play Audio</button>
+
+                    <button type = "button" onclick = "pauseDroneAudio()" id = "dronesPauseAudio" class = "backgroundAudio">Pause Audio</button>
+
+                </div>
 
             </div>
              <!--! Drone container node 👆🏻 --> 
@@ -344,25 +374,17 @@
 
             <div class = "site-about">
         
-                <h4 class = "heading-element-f">About This Site</h4>
+                <h4 class = "heading-element-f">About</h4>
 
-                <p class = "parragraph-element-f">Professional portfolio of Armando Adorno with content on his projects, tech stack, and progress.</p>
+                <p class = "parragraph-element-f">Armando Adorno professional portfolio to show technical knowledge, education, and experience</p>
 
             </div>
 
             <div class = "contact-me"> <!--* Ext. Soft. Hyperlinks-->
 
-    
-                <a class = "secondary-hyperlink" href = "https://www.linkedin.com/in/engineer-armando/">
-                    <img src = "/media/LinkedIn-Blue-128-Γö¼┬½@2x.png" alt = "Linkedin logo" class = "outer-brand">
-                </a>
-    
-                <a class = "secondary-hyperlink" href = "https://app.joinhandshake.com">
-                    <img src = "/media/handshake_icon.png" alt = "Handshake logo" class = "outer-brand">
-                </a>
-    
+            
                 <a class = "secondary-hyperlink" href = "https://github.com/armando-adorno">
-                    <img src = "/media/Octocat.png" alt = "GitHub logo" class = "outer-brand">
+                    <img src = "media/Octocat.png" alt = "GitHub logo" class = "outer-brand">
                 </a>
 
             </div>
