@@ -1,4 +1,4 @@
-<h1 align = "center">Armando Adorno 📖</h1>
+<h1 align = "center">🤖💻 Computer Engineer 🤖💻</h1>
 
 <div align = "center">
 
@@ -8,10 +8,10 @@
 
 <p align = "center">
 
-💻 Computer Engineer and Drone Operator specializing in Artificial Intelligence.
-👋 This profile was created to collaborate on projects and create professional networking.
-💼 Always working to improve.
-🚁 Drone (UAV) operator.
+- 💻 Computer Engineer and Drone Operator specializing in Artificial Intelligence 
+- 👋 This profile was created to collaborate on projects and create professional networking 
+- 🤖 Always working to evolve 
+- 🚁 Drone (UAV) operator 
 
 </p>
 

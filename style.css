@@ -1,80 +1,266 @@
-/**TODO Main Menu */
+/*TODO: Refactoring*/
+/*TODO: Device responsive*/
 
-#hamburguer-menu
+/*! Generic website elements👇🏻*/
+html
 {
-    visibility: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
-.primary-hyperlink:link /*^ Unvisited link*/
+body
 {
-    text-decoration-line: none;
-    color: deepskyblue;
-    background-color: lightblue;
-    border-style: solid;
-    border-width: thin;
-    border-radius: 10%;
-    border-color: darkblue;
-    margin: 4px;
-}
-.primary-hyperlink:visited /*^ Visited link*/
-{
-    text-decoration-line: none;
-    color: dodgerblue;
-    background-color: lightblue;
-    border-style: solid;
-    border-width: thin;
-    border-radius: 10%;
-    border-color: darkblue;
-    margin: 4px;
-}
-.primary-hyperlink:hover /*^ Pointer over link*/
-{
-    text-decoration-line: underline overline;
-    background-color: white;
-    border-radius: 10%;
-}
-.primary-hyperlink:active /*^ On Click Event link*/
-{
-    text-decoration-line: none;
+    flex-grow: 1;
 }
 
-/**TODO Header */
-
-body header
+.documentHeader
 {
-    background-color: #304480;
+    background-color: rgb(17, 236, 229);
     padding: 10px 5px;
     margin-bottom: 10px;
 }
-body header h3
+.siteLogo
 {
+    position: relative;
     color: #fff;
+    font-size: small;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 3px;
 }
-
-/*TODO About*/
-#ext-links /*! Element will be displayed only of larger screens (TV,Monitors) viewports*/
+.menuContainer
 {
-    display: none;
+    display: flex;
+    justify-content: center;
 }
-
-/**TODO Experience*/
-#exp-list
+.intraLink
 {
-    display: none;
+    background-color: white;
 }
-
-/**TODO Comp. Knowledge*/
-#comp-knowledge
+.intraLink:link /*^ Unvisited link*/
 {
-    display: none;
+    text-decoration-line: none;
+    color: black;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20%;
+    border-color: darkblue;
+    margin: 4px;
+}
+.intraLink:visited /*^ Visited link*/
+{
+    text-decoration-line: none;
+    color: white;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20%;
+    border-color: darkblue;
+    margin: 4px;
+}
+.intraLink:hover /*^ Pointer over link*/
+{
+    text-decoration-line: underline overline;
+    background-color: rgb(17, 236, 229);
+    border-radius: 20%;
+}
+.intraLink:active /*^ On Click Event link*/
+{
+    text-decoration-line: none;
 }
 
-/**TODO Footer */
+.externalLink
+{
+    color: rgb(17, 236, 229);
+    text-decoration: none;
+    z-index: 7;
+}
+
 footer
 {
-    background-color: antiquewhite;
-   
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    background-color: rgb(17, 236, 229);
+    bottom: 0;
 }
+#portfolioFooter
+{
+    margin-top: 25%;
+}
+.siteAbout
+{
+    position: relative;
+    top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headingFooter
+{
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.myLinks, .siteAbout, #copyrigth, .aboutMeInfo, .myPositionRole,.industryCat, .aboutMeText, .scientificField, .proficiencyHeading
+{
+    text-align: center;
+}
+#copyrigth
+{
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+.hyperlinkImage
+{
+    height: 25px;
+    width: 30px;
+}
+.myLinks .externalLink
+{
+    margin-left: 10px;
+}
+
+/*! Generic website elements👆🏻*/
+
+/*! Home website elements👇🏻*/
+.mainContainer
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.aboutMeHeading, .jobExpHeading, .literacyHeading 
+{
+    /** Default margin-bottom margin is 21.28.*/
+   /** Each selectors is a component of a flex item box. */
+
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 7;
+    border-top: none;
+    border-right: none;
+    border-bottom: 21.28px solid whitesmoke;
+    border-left: none;
+}
+.aboutMe
+{
+    width: 33%;
+}
+.aboutMeHeading
+{
+    /** Default margin-bottom margin is 21.28.*/
+   /** The selector is a component of a flex item box. */
+    background-color: lightblue;
+    margin-right: 1px;
+}
+.parragraphHeading
+{
+    margin-bottom: 10px;
+}
+.aboutMeParagraph
+{
+    width: 100%;
+}
+.myName
+{
+    font-size: medium;
+    color: rgb(17, 236, 229);
+}
+.profession
+{
+    font-size: x-small; 
+}
+.jobExpHeading
+{
+   /** Default margin-bottom margin is 21.28.*/
+   /** This selector is a component of a flex item */
+
+    background-color: chartreuse;
+}
+.jobExperience
+{
+    background-color: rgb(213, 236, 213);
+    z-index: 1;
+}
+.jobTableHeader, .computerTableHeader
+{
+    background-color: white;
+    color: rgb(17, 236, 229);
+}
+.computerTableHeader
+{
+    width: 50%;
+}
+.literacyHeading
+{
+    background-color: cyan;
+    margin-left: 1px;
+}
+#knowledgeHeader
+{
+    width: 100%;
+}
+.unorderedDetails
+{
+    padding-left: 10px;
+}
+.computerLiteracy
+{
+    background-color: lightcyan;
+}
+.proficiencyHeading
+{
+    background-color: white;
+    width: 100%;
+}
+.scientificField, .courseName
+{
+    border-bottom-style: dotted;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+}
+.overlayContainer
+{
+    position: relative;
+    width: 100%;
+    margin-top: 2px;
+}
+#myImage, .overlayImage
+{
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+}
+#myImage
+{
+    display: block;
+    width: 40%;
+    height: 40%;
+}
+.overlayImage
+{
+    display: block;
+    width: 40%;
+    height: 100%;
+}
+.overlay
+{
+    position: absolute;
+    bottom: 90%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: 2s ease;
+}
+.overlayContainer:hover .overlay
+{
+    bottom: 0;
+    height: 100%;
+}
+
+/*! Home website elements.👆🏻*/
+
 .contact-me .outer-brand, #ext-links .outer-brand
 {
     height: 17px;
@@ -87,843 +273,516 @@ footer
     text-align: center;
 }
 
-/*^ MOBILE PHONES DEVICES 👇🏻*/
-@media (orientation:portrait) and (width: 64px) and (height:96px) /**! No Good User Experience*/
+/*! Elements related to the 'Portfolio' document 👇🏻*/
+.hamburguerIcon
 {
-    header, #menu-section, .menu
-    {
-        display: none;
-    }
-
-    /**! About Me */
-
-    .old-text
-    {
-        display: none; 
-    }
-    #armando-description
-    {
-        margin-bottom: 0px;
-    }
-    #armando-description:after
-    {
-        content: "Computer Engineer";
-        font-size: smaller;
-    }
-
-    /**! Prof. Exp.*/
-    .my-experience
-    {
-        display: none;
-    }
-
-    #pro-header:after
-    {
-        content: "Exp.";
-    }
-
-    /**! Computer System Knowledge*/
-    .proficiency-tech
-    {
-        display: none;
-    }
-
-     /**! Footer*/
-
-     footer
-     {
-        display:none;
-     }  
+    margin-left: 3px;
+    color: black;
+    top: 0px;
+    position: relative;
+}
+.hamburguerIcon:hover
+{
+    cursor: pointer;
 }
 
-@media all and (min-width: 170px) and (max-width: 350px)
+.sidebarContainer
 {
-    header h3
-    {
-        font-size: small;
-        font-style: normal;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    /*! Menu Section */
-
-    .primary-hyperlink
-    {
-        display: none;
-    }
-    #hamburguer-menu
-    {  
-        visibility: visible;
-        position: absolute;
-        z-index: initial;
-        left: 10px;
-        top: 80px;
-    }
-
-    /*! About Me Section */
-    #armando-description
-    {
-        font-size: small;
-    }
-
-    /*! My Experience Section*/
-    .old-text
-    {
-        display: none;
-    }
-    #pro-header::after
-    {
-        content: "Experience";
-    }
-
-    .data-table
-    {
-        display: none;
-    }
-
-    #exp-list
-    {
-        display:list-item;
-    }
-    #exp-list li
-    {
-        list-style: symbols(cyclic "👨🏻‍💻");
-        font-size: small;
-        font-weight: normal;
-        margin-bottom: 12px;
-    }
-
-    /*! Computer Knowledge Section*/
-    #comp-header:after
-    {
-        content: "Comp. Skills";
-    }
-    #comp-knowledge
-    {
-        display: list-item;
-    }
-    #comp-knowledge li
-    {
-        list-style: symbols(cyclic "💻");
-        font-size: small;
-        font-weight: normal;
-        margin-bottom: 12px;
-    }
-
-    footer
-    {
-        background-color:antiquewhite;
-    }
-  
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    z-index: 7;
 }
 
-@media all  and (min-width: 351px) and (max-width:499px)
+.sidebarContainer a
 {
-    /*TODO Generic*/
-
-    /** Table*/
-    .data-table
-    {
-        border-style: groove;
-        width: 100%;
-    }
-    .data-table th
-    {
-        background-color: cyan;
-    }
-    .data-table ul
-    {
-        padding-left: 3px;
-        list-style: none;
-    }
-
-    /**TODO Menu*/
-    #menu-section
-    {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-    }
-
-    /**TODO About Me*/
-  
-    #about-header
-    {
-        background-color: aquamarine;
-    }
-    .about-text
-    {
-        text-align: center;
-    }
-    .overlay-container
-    {
-      position: relative;
-      width: 100%;
-    }
-    #armando-img
-    {
-      display: block;
-      width: 50%;
-      height: 50%;
-      margin-right: auto;
-      margin-left: auto;
-      right: 0;
-    }
-
-    .overlay-img
-    {
-        display: block;
-        width: 50%;
-        height: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        right: 0;
-    }
-
-    .overlay
-    {
-      position: absolute;
-      bottom: 100%;
-      left: 0;
-      right: 0;
-      overflow: hidden;
-      width: 100%;
-      height: 0%;
-      transition: 2s ease;
-    }
-
-    .overlay-container:hover .overlay
-   {
-     bottom: 0;
-     height: 100%;
-   }
-
-    /**todo Professional Experience*/
-   
-    .my-experience h4
-    {
-        text-align: center;
-        background-color: #aae8fc;
-    }
-       
-    .industry-type, .org-role, .role-desc
-    {
-        border-style: groove;
-        border-width: 1px;
-        border-left: none;
-        border-bottom: none;
-        text-align: center;
-    }
-    .role-desc
-    {
-        margin-bottom: 4px;
-    }
-   
-    /**TODO Computer Proficiency*/
-    #comp-header
-    {
-        text-align: center;
-        background-color: lightblue;
-    }
-    .layer-cell
-    {
-        text-align: center;
-    }
-    .proficiency-cell
-    {
-        padding-left: 3px;
-    }
-    .layer-cell, .proficiency-cell
-    {
-        border-style: groove;
-        border-width: 1px;
-        border-left: none;
-        border-bottom: none;
-    }
-    .proficiency-h6
-    {
-        text-align: center;
-        border-style: ridge;
-        border-width: 1px;
-        width: 100%;
-        background-color: lightcyan;
-    }
-    .sub-table
-    {
-        width: 100%;
-    }
-   
-    /**TODO Footer*/
-    body footer
-    {
-        margin-top: 5%;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background-color: antiquewhite;
-    }
-    .heading-element-f, .parragraph-element-f
-    {
-        text-align: center;
-    }
-    .contact-me
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #copyrigth
-    {
-        text-align: center;
-    }
-  
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #818181;
+    font-size: 25px;
+    display: block;
 }
 
-@media all and (min-width: 500px) and (max-width: 1000px)
+.sidebarContainer a:hover
 {
-    /*TODO: Generic*/
+    color: #f1f1f1;
+}
+.sidebarMainLinks /** Sidebar Main Links elements not displayed in large viewports*/
+{
+    display: none;
+}
+.abilityImage
+{
+    height: 20px;
+    width: 30px;
+}
+.abilityCategory
+{
+    font-size:large;
+}
+/** Portfolio main content segment*/
+#portfolioContent
+{
+    margin-left: 155px;
+}
+body
+{
+    color: black;
+}
+.mainHeading
+{
+    text-align: center;
+    font-size: medium;
+    width: 100%;
+}
+.expertiseContainer
+{
+    display: none;
+}
+.defaultNode
+{
+    display: block;
+    text-align: center;
+}
+#knowledgeList
+{
+    list-style: none;
+    background-color: rgb(17, 236, 229);
+    width: 50%;
+    margin: auto;    
+}
+.listItem, .proficiencyDetails
+{
+    margin-bottom: 8px;
+}
+.portfolioP
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+}
+.audioButtons
+{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.backgroundAudio
+{
+    cursor: pointer;
+    border-radius: 4px;
+    border-color: lightblue;
+    background-color: lightblue;
+    color: #818181;
+    margin-right: 10px;
+}
 
-    .small-viewport
+/** Computer Network Node 👇🏻*/
+.logicalTopology
+{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 0px;
+}
+#textFocus
+{
+    background-color: yellow;
+}
+/** Computer Network Node 👆🏻*/
+
+.strongEmphasis
+{
+    color: rgb(17, 236, 229);
+    border-style: groove;
+    border-width: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/** Software Engineering Node 👇🏻*/
+.galleryHeading
+{
+    text-align: center;
+}
+.galleryContainer
+{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    border-style: dotted;
+    border-color: rgb(17, 236, 229);
+    border-right: none;
+    border-left: none;
+}
+*
+{
+    box-sizing: border-box;
+}
+.capstoneSlide, .uavSlide, .uavVideo
+{
+    display: none;
+}
+.uavSlide img,.uavVideo video
+{
+    height: 180px;
+    width: 50%;
+}
+.capstoneSlide img
+{
+    height: 300px;
+}
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev
+{
+    left: 0;
+}
+.next
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover
+{
+    background-color: rgb(17, 236, 229);
+    color: black;
+}
+/** Software Engineering Node 👆🏻*/
+
+
+/** Drones Node 👇🏻*/
+
+
+
+
+
+/** Drones Node 👆🏻*/
+
+
+
+/*! Elements related to the 'Portfolio' document 👆🏻*/
+
+/*! Gist scripts overriden styles 👇🏻*/
+body .gist .gist-file
+{
+    border: 1px dashed #adb5bd;
+    z-index: 7;
+}
+body .gist .gist-data
+{
+    background-color: #f1f3f5;
+    z-index: 7;
+}
+body .gist .gist-meta
+{
+    display: none;
+}
+body .gist .highlight 
+{
+    background: #272822;
+    z-index: 7;
+}
+body .gist .blob-num,
+body .gist .blob-code-inner,
+body .gist .pl-s2,
+body .gist .pl-stj 
+{
+    color: #f8f8f2;
+}
+body .gist .pl-c1
+ {
+    color: #ae81ff;
+}
+body .gist .pl-enti 
+{
+    color: #a6e22e;
+    font-weight: 700;
+}
+body .gist .pl-st
+ {
+    color: #66d9ef;
+}
+body .gist .pl-mdr 
+{
+    color: #66d9ef;
+    font-weight: 400;
+}
+body .gist .pl-ms1 
+{
+    background: #fd971f;
+}
+body .gist .pl-c,
+body .gist .pl-c span,
+body .gist .pl-pdc 
+{
+    color: #75715e;
+    font-style: italic;
+    z-index: 7;
+}
+body .gist .pl-cce,
+body .gist .pl-cn,
+body .gist .pl-coc,
+body .gist .pl-enc,
+body .gist .pl-ens,
+body .gist .pl-kos,
+body .gist .pl-kou,
+body .gist .pl-mh .pl-pdh,
+body .gist .pl-mp,
+body .gist .pl-mp1 .pl-sf,
+body .gist .pl-mq,
+body .gist .pl-pde,
+body .gist .pl-pse,
+body .gist .pl-pse .pl-s2,
+body .gist .pl-mp .pl-s3,
+body .gist .pl-smi,
+body .gist .pl-stp,
+body .gist .pl-sv,
+body .gist .pl-v,
+body .gist .pl-vi,
+body .gist .pl-vpf,
+body .gist .pl-mri,
+body .gist .pl .pl-vpu 
+{
+    color: #66d9ef;
+    z-index: 7;
+}
+body .gist .pl-cos,
+body .gist .pl-ml,
+body .gist .pl-pds,
+body .gist .pl-s,
+body .gist .pl-s1,
+body .gist .pl-sol
+ {
+    color: #e6db74;
+    z-index: 7;
+}
+body .gist .pl-e,
+body .gist .pl-ef,
+body .gist .pl-en,
+body .gist .pl-enf,
+body .gist .pl-enm,
+body .gist .pl-entc,
+body .gist .pl-entm,
+body .gist .pl-eoac,
+body .gist .pl-eoac .pl-pde,
+body .gist .pl-eoi,
+body .gist .pl-mai .pl-sf,
+body .gist .pl-mm,
+body .gist .pl-pdv,
+body .gist .pl-som,
+body .gist .pl-sr,
+body .gist .pl-vo
+{
+    color: #a6e22e;
+    z-index: 7;
+}
+body .gist .pl-ent,
+body .gist .pl-eoa,
+body .gist .pl-eoai,
+body .gist .pl-eoai .pl-pde,
+body .gist .pl-k,
+body .gist .pl-ko,
+body .gist .pl-kolp,
+body .gist .pl-mc,
+body .gist .pl-mr,
+body .gist .pl-ms,
+body .gist .pl-s3,
+body .gist .pl-smc,
+body .gist .pl-smp,
+body .gist .pl-sok,
+body .gist .pl-sra,
+body .gist .pl-src,
+body .gist .pl-sre
+{
+    color: #f92672;
+    z-index: 7;
+}
+body .gist .pl-mb,
+body .gist .pl-pdb 
+{
+    color: #e6db74;
+    font-weight: 700;
+    z-index: 7;
+}
+body .gist .pl-mi,
+body .gist .pl-pdi 
+{
+    color: #f92672;
+    font-style: italic;
+    z-index: 7;
+}
+body .gist .pl-pdc1,
+body .gist .pl-scp 
+{
+    color: #ae81ff;
+    z-index: 7;
+}
+body .gist .pl-sc,
+body .gist .pl-sf,
+body .gist .pl-mo,
+body .gist .pl-entl 
+{
+    color: #fd971f;
+    z-index: 7;
+}
+body .gist .pl-mi1,
+body .gist .pl-mdht
+{
+    color: #a6e22e;
+    background: rgba(0, 64, 0, .5);
+    z-index: 7;
+}
+body .gist .pl-md,
+body .gist .pl-mdhf 
+{
+    color: #f92672;
+    background: rgba(64, 0, 0, .5);
+    z-index: 7;
+}
+body .gist .pl-mdh,
+body .gist .pl-mdi 
+{
+    color: #a6e22e;
+    font-weight: 400;
+    z-index: 7;
+}
+body .gist .pl-ib,
+body .gist .pl-id,
+body .gist .pl-ii,
+body .gist .pl-iu
+{
+    background: #a6e22e;
+    color: #272822;
+    z-index: 7;
+}
+
+/*!Media Queries: Responsive👇🏻*/
+
+/*^ 4k Resolution Devices: Television Consumer Devices & Movie Projection 👇🏻*/
+
+
+@media all and (min-width: 3840px) and (max-width: 4096px)
+/*! Priority Level : Low 👇🏻*/
+/*TODO: Need UI/UX improvement because this media query is for cinematic television devices*/
+/*! Priority Level: Low 👆🏻*/
+{
+    .mainContainer
     {
-        display: none; /*Erase the button element (hamburguer) menu*/
+        justify-content: space-between;
     }
-    /** Table*/
-
-    .data-table
+    /** Main Document - Start*/
+    
+    .aboutMe, .jobExperience, .computerLiteracy
     {
-        border-style: groove;
         width: 100%;
     }
-    .data-table th
+
+    /** Main Document - End*/
+
+    /** Portfolio Document - Start*/
+    #portfolioContent
     {
-        background-color: cyan;   
+        flex-direction: column;
+    }
+
+
+    /** Portfolio Document - End*/
+}
+
+
+/*^ 4k Resolution Devices: Television Consumer Devices & Movie Projection 👆🏻*/
+
+@media all and (max-width: 1920px)
+{
+    .mainContainer
+    {
+        justify-content: space-evenly;
+    }
+     /** Main Document - Start*/
+    .aboutMeHeading
+    {
+        width: 100%;
+    }
+    .aboutMe, .jobExperience, .computerLiteracy
+    {
+        width: 30%;
+    }
+
+      /** Main Document - End*/
+
+    /** Portfolio Document - Start*/
+
+    #portfolioContent
+    {
+        flex-direction: column;
     } 
-    .data-table ul
-    {
-        list-style: none;
-        padding-left: 3px;
-    }
 
-    /*TODO Menu*/
-    #menu-section
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /*TODO About Me*/
-
-    #about-header
-    {
-        text-align: center;
-        background-color: aquamarine;
-    }
-    .overlay-container
-    {
-        position: relative;
-        width: 100%;
-    }
-    #armando-img
-    {
-        display: block;
-        width: 35%;
-        height: 35%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .overlay-img
-    {
-        display: block;
-        width: 35%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .overlay
-    {
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        right: 0;
-        overflow: hidden;
-        width: 100%;
-        height: 0%;
-        transition: 2s ease;
-    }
-    .overlay-container:hover .overlay
-    {
-
-        bottom: 0;
-        height: 100%;
-    }
-
-    /*TODO Professional Experience*/
-    #pro-header
-    {
-        text-align: center;
-        background-color: #aae8fc;
-    }
-    .industry-type
-    {
-        border-style: groove;
-        border-width: 1px;
-        border-left: none;
-        border-bottom: none;
-        text-align: center;
-    }
-    .org-role
-    {
-        border-style: groove;
-        border-width: 1px;
-        border-left: none;
-        border-bottom: none;
-        text-align: center;
-    }
-    .role-desc
-    {
-        border-style: groove;
-        border-width: 1px;
-        border-left: none;
-        border-bottom: none;
-    }
-
-    /*TODO Computer Proficiency*/
-
-    #comp-header
-    {
-        text-align: center;
-        background-color: lightblue;
-    }
-    .layer-cell
-    {
-        text-align: center;
-    }
-    .proficiency-cell
-    {
-        padding-left: 3px;
-    }
-    .layer-cell, .proficiency-cell
-    {
-        border-style: groove;
-        border-width: 1px;
-        border-left: none;
-        border-bottom: none;
-    }
-    .proficiency-h6
-    {
-        text-align: center;
-        border-style: ridge;
-        border-width: 1px;
-        width: 100%;
-        background-color: lightcyan;
-    }
-    .sub-table
-    {
-        width: 100%;
-    }
-
-    /*TODO Footer*/
-
-    .heading-element-f, .parragraph-element-f
-    {
-        text-align: center;
-    }
-    .contact-me
-    {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-    #copyrigth
-    {
-        text-align: center;
-    }
-
+    /** Portfolio Document - End*/
 }
 
-@media all and (min-width:1000px) and (max-width: 1700px)
+@media all and (max-width: 1024px)
 {
-    /*TODO: Generic*/
-    .small-viewport
+    /**Main Document - Start*/
+
+    .mainContainer
     {
-        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
-    .data-table
+    .aboutMe, .jobExperience, .computerLiteracy
     {
-        border-style: groove;
         width: 100%;
     }
-    table thead tr th
+    .jobExperience
     {
-        background-color: cyan;
+        margin-bottom: 10px;
+    }
+    .computerLiteracy
+    {
+        margin-top: 10px;
+    }
+    #myImage
+    {
+        height: 30%;
         width: 30%;
     }
-
-    /*TODO:  Main Menu*/
-
-    #menu-section
+    .overlayImage
     {
-        display: flex;
-        align-self: center;
-        justify-content: center;
+        width: 30%;
     }
-    #hamburguer-menu /** Hamburguer Icon Button Element Removed*/
-    {
-        display: none;
-    }
-
-    /*TODO: About Me*/
-
-    .about-me #about-header
-    {
-        background-color: aquamarine;
-    }
-    .about-text
-    {
-        text-align: center;
-    }
-    .overlay-container 
-    {
-        position: relative;
-        width: 100%;
-    }
-    #armando-img
-    {
-        display: block;
-        width: 250px;
-        height: 250px;
-        margin-right: auto;
-        margin-left: auto;
-        right: 0;
-    }
-    .overlay-img
-    {
-        display: block;
-        width: 250px;
-        height: 250px;
-        margin-right: auto;
-        margin-left: auto;
-        right: 0;
-    }
-    .overlay
-    {
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        right: 0;
-        overflow: hidden;
-        width: 100%;
-        height: 0%;
-        transition: 2s ease;
-    }
-    .overlay-container:hover .overlay
-    {
-        bottom: 0;
-        height: 100%;
-    }
-
-    /*TODO: Professional Experience*/
-    #pro-header
-    {
-        text-align: center;
-        background-color: #aae8fc;
-    }
-    .exp-th
-    {
-        width: 25%;
-    }
-    #exp-desc-th
-    {
-        width: 50%;
-    }
-    .data-table .industry-type, .data-table .org-role
-    {
-        text-align: center;
-    }
-    .data-table .experience-details
-    {
-        list-style: none ;
-        margin-bottom: 5px;
-    }
-
-    /*TODO: Computer System Knowledge*/
-    #comp-header
-    {
-        text-align: center;
-        background-color: lightblue;
-    }
-    .knowledge-th
-    {
-        padding-top: 50%;
-        padding-bottom: 50%;
-    }
-    .layer-cell
-    {
-        text-align: center;
-        border-style: groove;
-        border-width: 1px;
-        border-left: none;
-        border-bottom: none;
-        margin-bottom: 0px;
-    }
-    .proficiency-cell
-    {
-        border-style: groove;
-        border-width: 1px;
-        border-left: none;
-        border-bottom: none;
-    }
-    .proficiency-details
-    {
-        list-style: none;
-        margin-bottom: 5px;
-        text-align: left;
-        padding-left: 25%;
-        padding-right: 25%;
-    }
-    .proficiency-h6
-    {
-        text-align: center;
-        border-style: ridge;
-        border-width: 1px;
-        width: 100%;
-        background-color:lightcyan;
-    }
-    .unordered-details
-    {
-        padding-left: 0px;
-    }
-    /** Sub Table 👇🏻*/
-    .sub-table
+    .dataTable
     {
         width: 100%;
     }
-    .proficiency-details-sub
-    {
-        list-style: none;
-    }
 
-    /*TODO: Footer */
-    .heading-element-f, .parragraph-element-f
+    /** Main Document - End*/
+    .netDesign
     {
-        text-align: center;
+        width: 100%;
     }
-    .contact-me
-    {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-    #copyrigth
-    {
-        text-align: center;
-    }
-    
 }
 
-@media all and (min-width: 1700px)
-{
-    /*TODO: Generic*/
-    .about-me, .my-experience, .proficiency-tech
-    {
-        display: inline;
-        float: left;
-        width: 30%;
-    }
-    .small-viewport
-    {
-        display: none;
-    }
-    .data-table
-    {
-        border-style: groove;
-        width: 100%;
-    }
-    table thead tr th
-    {
-        background-color: cyan;
-        width: 30%;
-    }
-
-    /*TODO:  Main Menu*/
-
-    #menu-section
-    {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-    }
-    #hamburguer-menu /** Hamburguer Icon Button Element Removed*/
-    {
-        display: none;
-    }
-
-    /*TODO: About Me*/
-
-    .about-me #about-header
-    {
-        background-color: aquamarine;
-    }
-    .about-text
-    {
-        text-align: center;
-    }
-    .overlay-container 
-    {
-        position: relative;
-        width: 100%;
-    }
-    #armando-img
-    {
-        display: block;
-        width: 250px;
-        height: 250px;
-        margin-right: auto;
-        margin-left: auto;
-        right: 0;
-    }
-    .overlay-img
-    {
-        display: block;
-        width: 250px;
-        height: 250px;
-        margin-right: auto;
-        margin-left: auto;
-        right: 0;
-    }
-    .overlay
-    {
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        right: 0;
-        overflow: hidden;
-        width: 100%;
-        height: 0%;
-        transition: 2s ease;
-    }
-    .overlay-container:hover .overlay
-    {
-        bottom: 0;
-        height: 100%;
-    }
-    #ext-links
-    {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-    }
-
-
-    /*TODO: Professional Experience*/
-    #pro-header
-    {
-        text-align: center;
-        background-color: #aae8fc;
-    }
-    #exp-table
-    {
-        border-right: none;
-    }
-    .exp-th
-    {
-        width: 25%;
-    }
-    #exp-desc-th
-    {
-        width: 50%;
-    }
-    .data-table .industry-type, .data-table .org-role
-    {
-        text-align: center;
-    }
-    .data-table .experience-details
-    {
-        list-style: none ;
-        margin-bottom: 5px;
-    }
-
-    /*TODO: Computer System Knowledge*/
-    #comp-header
-    {
-        text-align: center;
-        background-color: lightblue;
-    }
-    .knowledge-th
-    {
-        padding-top: 50%;
-        padding-bottom: 50%;
-    }
-    .layer-cell
-    {
-        text-align: center;
-        border-style: groove;
-        border-width: 1px;
-        border-left: none;
-        border-bottom: none;
-        margin-bottom: 0px;
-    }
-    .proficiency-cell
-    {
-        border-style: groove;
-        border-width: 1px;
-        border-left: none;
-        border-bottom: none;
-    }
-    .proficiency-details
-    {
-        list-style: none;
-        margin-bottom: 5px;
-        text-align: left;
-        padding-left: 25%;
-        padding-right: 25%;
-    }
-    .proficiency-h6
-    {
-        text-align: center;
-        border-style: ridge;
-        border-width: 1px;
-        width: 100%;
-        background-color:lightcyan;
-    }
-    .unordered-details
-    {
-        padding-left: 0px;
-    }
-    /** Sub Table 👇🏻*/
-    .sub-table
-    {
-        width: 100%;
-    }
-    .proficiency-details-sub
-    {
-        list-style: none;
-    }
-
-    /*TODO: Footer */
-    .footer
-    {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        left: 0;
-        display: none;
-    }
-    .heading-element-f, .parragraph-element-f
-    {
-        text-align: center;
-    }
-    .contact-me
-    {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-    #copyrigth
-    {
-        text-align: center;
-    }
-    
-}
+/*!Media Queries: Responsive👆🏻*/

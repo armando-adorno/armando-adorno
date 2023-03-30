@@ -3,428 +3,349 @@
 <html>
 
 <head>
-    <title>💻 Computer Engineer - Armando Home</title>
+    <title>💻 Armando : Home</title>
     <link href = "style.css" rel = "stylesheet"></link>
-    <meta name = "viewport" content= "width=device-width, initial-scale = 1">
-</head>
+    <meta name = "viewport" content= "width = device-width, initial-scale = 1">
+</head> 
 
 <body>
 
-    <header>
+    <header class = "documentHeader">
 
-        <h3>Armando Portfolio</h3>
+        <span class = "siteLogo">Armando</span>
+
+        <div class = "menuContainer">
+
+            <nav class = "menu">
+
+                <!--
+                <div class = "small-viewport">
+
+                    <button id = "hamburguer-menu" type = "button">≡</button>
+                </div>
+                -->
+
+                <a href = "#" class = "intraLink">Home</a>
+                <a href = "portfolio.html" class = "intraLink">Portfolio</a>
+            
+            </nav>
+
+        </div>
 
     </header>
 
-    <!--! Main Menu Conntainer 👇🏻-->
-    <div id = "menu-section">
+    <div class = "mainContainer">
 
-        <nav class = "menu">
+        <div class = "aboutMe"> <!--* Start of About Me Section-->
 
-            <div class = "small-viewport">
-                <button id = "hamburguer-menu" type="button">≡</button>
-            </div>
+            <h4 id = "about-header" class = "aboutMeHeading">About</h4>
 
-            <a href = "#" class = "primary-hyperlink">
-                <strong>Home</strong>
-            </a> <!--^ Point to Armando Home Page.-->
-
-            <a href = "portfolio.html" class = "primary-hyperlink" onclick = "defaultContent()"> <!--* <a> event called-->
-                <strong>Portfolio</strong>
-            </a>  <!--^ Point to Armando Professional Portfolio.-->
-
-            <a href = "contact.html" class = "primary-hyperlink" hidden>
-                <strong>Contact</strong>
-            </a>
-                
-        </nav>
-
-    </div> 
-    <!--! Main menu container 👆🏻-->
-
-    <div class = "about-me"> <!--* Start of About Me Section-->
-
-        <h4 id = "about-header" class = "about-text">About</h4>
-
-        <div class = "overlay-container">
-
-            <img src = "media/armando.png" alt = "Armando" id = "armando-img">
-
-            <div class = "overlay">
-
-                <img class = "overlay-img  " src = "media/cyber-drone.png" alt = "uav">
-
-            </div>
-
-        </div>
-        
-        <p id = "armando-description" class = "about-text">
             
-            <span id = "armando-old" class = "old-text">
+            <div class = "overlayContainer">
+    
+                <img src = "media/armando.png" alt = "Armando" id = "myImage">
+    
+                <div class = "overlay">
+    
+                    <img class = "overlayImage  " src = "media/cyber-drone.png" alt = "uav">
+    
+                </div>
+    
+            </div>
 
-               Experienced Computer Engineer in software development, hardware design, computer networks, and data analysis with interest in <strong id = "armando-description">Artificial Intelligence</strong>.
+           <div class = "aboutMeText">
 
-            </span>
+                <strong class = "myName">Armando Adorno</strong>
+                <em class = "profession" id = "professionAbout"> // COMPUTER ENGINEER </em>
 
-            <div id = "ext-links">
-
-                <a class = "secondary-hyperlink" href = "https://www.linkedin.com/in/engineer-armando/">
-                    <img src = "media/LinkedIn-Blue-128-Γö¼┬½@2x.png" alt = "Linkedin logo" class = "outer-brand">
-                 </a>
-        
-                 <a class = "secondary-hyperlink" href = "https://app.joinhandshake.com">
-                    <img src = "media/handshake_icon.png" alt = "Handshake logo" class = "outer-brand">
-                 </a>
-        
-                 <a class = "secondary-hyperlink" href = "https://github.com/armando-adorno">
-                    <img src = "media/Octocat.png" alt = "GitHub logo" class = "outer-brand">
-                 </a> 
+                <p class = "aboutMeParagraph">
+                    <h6 class = "parragraphHeading">Welcome to my portfolio 🙂</h6>
+                     I'm a Computer Engineer and Drone Operator with practical experience in Software Engineering, Hardware Design, Computer Networks , and IT Business Analysis contributing in the improvement
+                     of businesses and people lives with technology solutions. My professional interest is the specialization of Artificial Intelligence.
+                </p>
 
             </div>
-        
-        </p>
 
-    </div> <!--* End Of About Me Section-->
-
-    <div class = "my-experience"> <!--* Start Of My Experience Section-->
-
-        <h4 id = "pro-header"><span class = "old-text">Professional Experience</span></h4>
-
-        <!--! This Section is not display in screen by default (only for very small devices)-->
-        <ul id = "exp-list">
-            <li>IT Business Analyst</li>
-            <li>Automation Specialist</li>
-            <li>Census Enumerator</li>
-            <li>Software Engineer</li>
-            <li>IT Tech. & Dev.</li>
-        </ul>
-        
-        <table id = "exp-table" class = "data-table"> <!--* Start Of Experience Table-->
-
-            <thead>
-
-                <tr>
-                    <th scope = "col" class = "exp-th">Industry</th>
-                    <th scope = "col" class = "exp-th">Position</th>
-                    <th scope = "col" class = "exp-th" id = "exp-desc-th">Description</th>
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-                <tr> <!--First tbody row-->
-                    <td class = "industry-type">Pharmaceutical</td>
-                    <td class = "org-role"><strong>IT Business Analyst</strong></td>
-                    <td class = "role-desc">
-                        <ul>
-                            <li class = "experience-details">👨🏻‍💻 Data analysis of IT systems</li>
-                            <li class = "experience-details">👨🏻‍💻 Created visual reports</li>
-                            <li class = "experience-details">👨🏻‍💻 Suggested how to improve the IT systems</li>
-                            <li class = "experience-details">👨🏻‍💻 Closed a IT infrastructure capital project</li>
-                            <li class = "experience-details">👨🏻‍💻 Content creation strategy</li>
-                            <li class = "experience-details">👨🏻‍💻 IT technical support</li>                      
-                        </ul>
-                    </td>
-
-                </tr> <!--End of first tbody row-->
-
-                <tr>
-
-                    <td class = "industry-type">Pharmaceutical</td>
-                    <td class = "org-role"><strong>Automation Specialist</strong></td>
-                    <td class = "role-desc">
-                        <ul>
-                            <li class = "experience-details">👨🏻‍💻 Improved software for control station operators</li>
-                            <li class = "experience-details">👨🏻‍💻 Software Quality Validation</li>
-                            <li class = "experience-details">👨🏻‍💻 Server Provisioning</li>
-                            <li class = "experience-details">👨🏻‍💻 Developed new software version</li>                        
-                        </ul>
-                    </td>
-
-                </tr>
-
-                <tr>
-
-                    <td class = "industry-type">Stadistical</td>
-                    <td class = "org-role"><strong>Census Enumerator</strong></td>
-                    <td class = "role-desc">
-                        <ul>
-                            <li class = "experience-details">👨🏻‍💻 Collected census data from citizens</li>
-                            <li class = "experience-details">👨🏻‍💻 Protected the data integrity</li>                       
-                        </ul>
-                    </td>
-
-                </tr>
-
-                <tr>
-
-                    <td class = "industry-type">Tech.</td>
-                    <td class = "org-role"><strong>Software Developer</strong></td>
-                    <td class = "role-desc">
-                        <ul>
-                            <li class = "experience-details">👨🏻‍💻 Contributed to a web app (MCV)</li> 
-                            <li class = "experience-details">👨🏻‍💻 Created visual reports of the app.</li>     
-                            <li class = "experience-details">👨🏻‍💻 Virtual Machines</li>               
-                        </ul>
-                    </td>
-
-
-                </tr>
-
-                <tr>
-
-                    <td class = "industry-type">Tech</td>
-                    <td class = "org-role"><strong>Software Developer</strong></td>
-                    <td class = "role-desc">
-                        <ul>
-                            <li class = "experience-details">👨🏻‍💻 Developed client side code of an industrial application</li> 
-                            <li class = "experience-details">👨🏻‍💻 Designed the graphical user interface</li>     
-                            <li class = "experience-details">👨🏻‍💻 Data visualization</li>               
-                        </ul>
-                    </td>
-
-
-                </tr>
-            
-            </tbody>
-
-        </table> <!--* End Of Experience Table-->
-
-    </div> <!--* End of "my-experience" class -->
-
-    <div class = "proficiency-tech">
-
-        <h4 id = "comp-header"><span class = "old-text">Computer System Knowledge</span></h4>
-
-        <!--! This Section is not display in screen by default (only for very small devices)-->
-        <ul id = "comp-knowledge">
-
-            <h6 class = "proficiency-h6">Infrastructure</h6>
-
-            <li>Computer Networks</li>
-            <li>Cloud Computing</li>
-            <li>Microsoft Azure</li>
-
-            <h6 class = "proficiency-h6">IDE</h6>
-
-            <li>Microsoft Visual Studio</li>
-            <li>NetBeans</li>
-            <li>Code::Blocks</li>
-
-            <h6 class = "proficiency-h6">Operating Systems</h6>
-
-            <li>Windows</li>
-            <li>macOS</li>
-            <li>Linux</li>
-            <li>Android</li>
-
-            <h6 class = "proficiency-h6">Web Dev.</h6>
-
-            <li>HTML5/CSS3</li>
-            <li>JavaScript</li>
-            <li>Boostrap v4-v5</li>
-            <li>JQuerry</li>
-            <li>Twig</li>
-            <li>React</li>
-            <li>Databases</li>
            
-            <h6 class = "proficiency-h6">Interpreted Lang.</h6>
+                    
+        </div> <!--* End Of About Me Section-->
+    
+        <div class = "jobExperience"> <!--* Start Of My Experience Section-->
+    
+            <h4 class = "jobExpHeading">Professional Experience</h4>
+    
+            <table class = "dataTable"> <!--* Start Of Experience Table-->
+    
+                <thead>
+    
+                    <tr>
+                        <th scope = "col" class = "jobTableHeader">Industry</th>
+                        <th scope = "col" class = "jobTableHeader">Position</th>
+                        <th scope = "col" class = "jobTableHeader">Description</th>
+                    </tr>
+    
+                </thead>
+    
+                <tbody>
+    
+                    <tr> <!--First tbody row-->
+                        <td class = "industryCat">Pharmaceutical</td>
+                        <td class = "myPositionRole"><strong>IT Business Analyst</strong></td>
+                        <td class = "role-desc">
+                            <ul>
+                                <li class = "roleDescription" id = "analystIT-li1">Security & Surveillance systems support</li>
+                                <li class = "roleDescription" id = "analystIT-li2">Security & Surveillance systems data analysis</li>
+                                <li class = "roleDescription" id = "analystIT-li3">IT business processes optimization</li>
+                                <li class = "roleDescription" id = "analystIT-li4">IT capital projects validation</li>
+                                <li class = "roleDescription" id = "analystIT-li4">Digital media creation</li>
+                                <li class = "roleDescription" id = "analystIT-li4">Onsite Support</li>
+                                                
+                            </ul>
+                        </td>
+    
+                    </tr> <!--End of first tbody row-->
+    
+                    <tr>
+    
+                        <td class = "industryCat">Pharmaceutical</td>
+                        <td class = "myPositionRole"><strong>Automation Specialist</strong></td>
+                        <td class = "role-desc">
+                            <ul>
+                                <li class = "experience-details">Support in the process automation.</li>
+                                <li class = "experience-details">Software output validation</li>
+                                <li class = "experience-details">Server support and configuration</li>
+                                <li class = "experience-details">Software development</li>                        
+                            </ul>
+                        </td>
+    
+                    </tr>
+    
+                    <tr>
+    
+                        <td class = "industryCat">Stadistical</td>
+                        <td class = "myPositionRole"><strong>Census Enumerator</strong></td>
+                        <td class = "role-desc">
+                            <ul>
+                                <li class = "experience-details">Collected census data from citizens</li>
+                                <li class = "experience-details">Protected the data integrity</li>                       
+                            </ul>
+                        </td>
+    
+                    </tr>
+    
+                    <tr>
+    
+                        <td class = "industryCat">Tech.</td>
+                        <td class = "myPositionRole"><strong>Software Developer</strong></td>
+                        <td class = "role-desc">
+                            <ul>
+                                <li class = "experience-details">Contributed to a web app (MCV)</li> 
+                                <li class = "experience-details">Created visual reports of the app.</li>     
+                                <li class = "experience-details">Virtual Machines</li>               
+                            </ul>
+                        </td>
+    
+                    </tr>
+    
+                    <tr>
+    
+                        <td class = "industryCat">Tech</td>
+                        <td class = "myPositionRole"><strong>Software Developer</strong></td>
+                        <td class = "role-desc">
+                            <ul>
+                                <li class = "experience-details">Developed client side code of an industrial application</li> 
+                                <li class = "experience-details">Designed the graphical user interface</li>     
+                                <li class = "experience-details">Data visualization</li>               
+                            </ul>
+                        </td>
+    
+                    </tr>
+                
+                </tbody>
+    
+            </table> <!--* End Of Experience Table-->
+    
+        </div> <!--* End of "my-experience" class -->
+
+        <!--! Computer Literacy Cell 👇🏻-->
+    
+        <div class = "computerLiteracy">
+    
+            <h4 id = "comp-header" class = "literacyHeading">Computer Engineering</h4>
+    
+            <table class = "dataTable" id = "proficiencyTable">
+    
+                <thead>
+    
+                    <tr>
+                        <th class = "computerTableHeader" scope = "col">Area</th>
+                        <th class = "computerTableHeader" id = "knowledgeHeader" scope = "col">Courses Taken</th>
+                    </tr>
+    
+                </thead>
+    
+                <tbody>
+
+                    <tr class = "scientificSetCourses">
+                        <td class = "scientificField">Computer Engineering</td>
+                        <td class = "courseName">
+                            <ul class = "unorderedDetails">
+                                <li class = "proficiencyDetails">Logic Circuits</li>
+                                <li class = "proficiencyDetails">Logic Circuits Laboratory</li>
+                                <li class = "proficiencyDetails">Microprocessors</li>
+                                <li class = "proficiencyDetails">Microprocessors Laboratory</li>
+                                <li class = "proficiencyDetails">Digital System Design with VHDL</li>
+                                <li class = "proficiencyDetails">Computer Arquitecture</li>
+                                <li class = "proficiencyDetails">Computer Arquitecture Lab.</li>
+                                <li class = "proficiencyDetails">Microcomputer Interfacing</li>
+                                <li class = "proficiencyDetails">Microcomputer Interfacing Lab.</li>
+                                <li class = "proficiencyDetails">Computer Networks</li>
+                                <li class = "proficiencyDetails">Computer Networks Lab.</li>
+                                <li class = "proficiencyDetails">Capstone Design I</li>
+                                <li class = "proficiencyDetails">Capstone Design II</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class = "scientificSetCourses">
+                        <td class = "scientificField">Computer Engineering<br>&<br>Computer Science</td>
+                        <td class = "courseName">
+                            <ul class = "unorderedDetails">
+                                <li class = "proficiencyDetails">Discrete Structures</li>
+                                <li class = "proficiencyDetails">Computer Programming Fundamentals</li>
+                                <li class = "proficiencyDetails">Computer Programming I</li>
+                                <li class = "proficiencyDetails">Computer Programming I Lab.</li>
+                                <li class = "proficiencyDetails">Computer Programming II</li>
+                                <li class = "proficiencyDetails">Computer Programming II Lab</li>
+                                <li class = "proficiencyDetails">Data Structures</li>
+                                <li class = "proficiencyDetails">Advanced Programming</li>
+                                <li class = "proficiencyDetails">Database Systems</li>
+                                <li class = "proficiencyDetails">Data Communications</li>
+                                <li class = "proficiencyDetails">Software Engineering</li>
+                                <li class = "proficiencyDetails">Operating Systems</li>
+                                <li class = "proficiencyDetails">Computer Forensics</li>
+                                <li class = "proficiencyDetails">Network Security</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class = "scientificSetCourses">
+                        <td class = "scientificField">Electrical Engineering</td>
+                        <td class = "courseName">
+                            <ul class = "unorderedDetails">
+                                <li class = "proficiencyDetails">Freshman Design for EE & CpE</li>
+                                <li class = "proficiencyDetails">Circuit Analysis I</li>
+                                <li class = "proficiencyDetails">Circuit Analysis II</li>
+                                <li class = "proficiencyDetails">Electrical Measurements Lab.</li>
+                                <li class = "proficiencyDetails">Electronics I</li>
+                                <li class = "proficiencyDetails">Computational Methods in Elec. & Comp. Engineering</li>
+                                <li class = "proficiencyDetails">Signals & systems</li>
+                                <li class = "proficiencyDetails">Digital Signal Processing</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class = "scientificSetCourses">
+                        <td class = "scientificField">Engineering</td>
+                        <td class = "courseName">
+                            <ul class = "unorderedDetails">
+                                <li class = "proficiencyDetails">Eng. Probability & Statistics</li>
+                                <li class = "proficiencyDetails">Eng. Mechanics, Statistics & Dynamics</li>
+                                <li class = "proficiencyDetails">Eng. Economics</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class = "scientificSetCourses">
+                        <td class = "scientificField">Mathematics</td>
+                        <td class = "courseName">
+                            <ul class = "unorderedDetails">
+                                <li class = "proficiencyDetails">Calculus I</li>
+                                <li class = "proficiencyDetails">Calculus II</li>
+                                <li class = "proficiencyDetails">Calculus III</li>
+                                <li class = "proficiencyDetails">Differential Equations</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class = "scientificSetCourses">
+                        <td class = "scientificField">Science</td>
+                        <td class = "courseName">
+                            <ul class = "unorderedDetails">
+                                <li class = "proficiencyDetails">Principles of Chemistry</li>
+                                <li class = "proficiencyDetails">Principles of Chemistry Lab.</li>
+                                <li class = "proficiencyDetails">Physics I</li>
+                                <li class = "proficiencyDetails">Physics I Lab.</li>
+                                <li class = "proficiencyDetails">Physics II</li>
+                                <li class = "proficiencyDetails">Physics II Lab.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class = "scientificSetCourses">
+                        <td class = "scientificField">English</td>
+                        <td class = "courseName">
+                            <ul class = "unorderedDetails">
+                                <li class = "proficiencyDetails">Study of the Essay as a Literary Genre</li>
+                                <li class = "proficiencyDetails">Business English and Communication</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class = "scientificSetCourses">
+                        <td class = "scientificField">Spanish</td>
+                        <td class = "courseName">
+                            <ul class = "unorderedDetails">
+                                <li class = "proficiencyDetails">Linguistic Analysis of Lit. Genres</li>
+                                <li class = "proficiencyDetails">Business Spanish</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr class = "scientificSetCourses">
+                        <td class = "scientificField">Socio Humanity</td>
+                        <td class = "courseName">
+                            <ul class = "unorderedDetails">
+                                <li class = "proficiencyDetails">Socio Humanistic Studies</li>
+                                <li class = "proficiencyDetails">Ethics, Global and Contemporary Issues</li>
+                        </td>
+                    </tr>
+
             
-            <li>Python</li>
-
-            <h6 class = "proficiency-h6">Prog. Lang.</h6>
-
-            <li>C++</li>
-
-        </ul>
-
-        <table id = "proficiency-table" class = "data-table">
-
-            <thead>
-
-                <tr>
-                    <th scope = "col" class = "Knowledge-th">Layer</th>
-                    <th scope = "col" class = "Knowledge-th">Proficiency</th>
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td class = "layer-cell">Infrastructure</td>
-                    <td class = "proficiency-cell">
-                        <ul class = "unordered-details">
-                            <li class = "proficiency-details">💻 Computer Network Design</li>
-                            <h6 class = "proficiency-h6">Serverless Computing</h6>
-                            <li class = "proficiency-details">💻 Microsoft Azure</li>
-                        </ul>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class = "layer-cell">Application</td> <!--* Computer Application Layer-->
-                    <td class = "proficiency-cell">
-                        <h6 class = "proficiency-h6">Integrated Development Environment</h6>
-                        <ul class = "unordered-details">
-                            <li class = "proficiency-details">💻 Microsoft Visual Studio</li>
-                            <li class = "proficiency-details">💻 NetBeans</li>    
-                            <li class = "proficiency-details">💻 Code::Blocks</li>   
-                        </ul>
-
-                        <h6 class = "proficiency-h6">Code Editor</h6>
-                        <ul class = "unordered-details">
-                            <li class = "proficiency-details">💻 Microsoft Visual Studio Code</li> 
-                        </ul> 
-                        
-                        <h6 class = "proficiency-h6">Productivity</h6>
-                        <ul class = "unordered-details">
-                            <li class = "proficiency-details">💻 Microsoft Office Tools</li>  
-                        </ul>
-
-                        <h6 class = "proficiency-h6">Business Analytics</h6>
-                        <ul class = "unordered-details">
-                            <li class = "proficiency-details">💻 Microsoft Power BI</li> 
-                            <li class = "proficiency-details">💻 Jaspersoft Studio</li>
-                        </ul>
-                    
-                    </td> <!--! End of the Application Layer Table data-->
-                    
-                
-                </tr>
-
-                <tr>
-                    <td class = "layer-cell">Operating Systems</td>
-                    <td class = "proficiency-cell">
-                        <ul class = "unordered-details">
-                            <li class = "proficiency-details">💻 Microsoft Windows</li> 
-                            <li class = "proficiency-details">💻 macOS</li> 
-                            <li class = "proficiency-details">💻 Linux</li>    
-                            <li class = "proficiency-details">💻 Android</li>         
-                        </ul>
-                    </td>
-                </tr>
-
-                <tr> <!--!Programming Layer Table Cells Row-->
-                    <td class = "layer-cell">Programming</td>
-                    <td class = "proficiency-cell">
-                        <h6 class = "proficiency-h6">Web Development</h6>
-
-                        <table class = "sub-table">
-                            <thead>
-                                <tr>
-                                    <th scope = "col" class = "sub-table-th">Client</th>
-                                    <th scope = "col" class = "sub-table-th">Frameworks</th>
-                                    <th scope = "col" class = "sub-table-th">Back end</th>
-                                </tr>
-                            </thead>
-
-                            <tbody> <!--!Web Dev Tech-->
-                                <tr>
-                                    <td>
-                                        <ul class = "unordered-details">
-                                            <li class = "proficiency-details-sub">💻 HTML5</li> 
-                                            <li class = "proficiency-details-sub">💻 CSS3</li>  
-                                            <li class = "proficiency-details-sub">💻 JavaScript</li>      
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul class = "unordered-details">
-                                            <li class = "proficiency-details-sub">💻 Boostrap v4-v5</li>
-                                            <li class = "proficiency-details-sub">💻 JQuerry</li>
-                                            <li class = "proficiency-details-sub">💻 Twig</li>
-                                            <li class = "proficiency-details-sub">💻 React</li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <ul class = "unordered-details">
-                                            <li class = "proficiency-details-sub">💻 Databases</li>
-                                            <li class = "proficiency-details-sub">💻 Python</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-
-                        </table>
-
-                        <h6 class = "proficiency-h6">Virtualization</h6>
-                        <ul class = "unordered-details">
-                            <li class = "proficiency-details">💻 Virtual Box</li>
-                            <li class = "proficiency-details">💻 Hyper-V</li>
-                        </ul>
-
-                        <h6 class = "proficiency-h6">High Level Lang.</h6>
-                        <ul class = "unordered-details">
-                            <li class = "proficiency-details">💻 Java</li>
-                            <li class = "proficiency-details">💻 C++</li>
-                            <li class = "proficiency-details">💻 Python</li>
-                        </ul>
-
-                    </td>
-
-                
-                </tr> <!--! End of Programming Layer Table Cells Row-->
-
-                <tr> <!--! Hardware Layer Cells Row-->
-
-                    <td class = "layer-cell">Hardware</td>
-                    <td class = "proficiency-cell">
-                        <ul class = "unordered-details">
-                            <li class = "proficiency-details">💻 Microprocesors</li>
-                            <li class = "proficiency-details">💻 Controllers</li>
-                            <li class = "proficiency-details">💻 Digital Logic Design</li>
-                            <h6 class = "proficiency-h6">Hardware Simulation</h6>
-                            <li class = "proficiency-details">💻 VHDL</li>
-                        </ul>
-                    </td>
-
-                </tr> <!--!End of Hardware Layer Cells Row-->
-
-                <tr> <!--! Information Layer-->
-
-                    <td class = "layer-cell">Information</td>
-                    <td class = "proficiency-cell">
-                        <ul class = "unordered-details">
-                            <li class = "proficiency-details">💻 Assembly</li>
-                        </ul>
-                    </td>
-
-                </tr>
-               
-            </tbody>
-
-        </table>
-
-    </div>
-
-    <!--! Need to fix the footer position-->
-    <div class = "footer">
+                </tbody>
     
-    <footer>
+            </table>
+    
+        </div>
+        <!--! Computer Literacy Cell 👆🏻-->
 
-        <div class = "site-about">
-        
-            <h4 class = "heading-element-f">About</h4>
+    </div> <!--Main Container-->
 
-            <p class = "parragraph-element-f">Armando Adorno professional portfolio to show technical knowledge, education, and experience</p>
+    <footer id = "homeFooter">
+
+        <div class = "siteAbout">
+    
+            <h4 class = "headingFooter">About</h4>
+
+            <p class = "parragraphFooter">Professional portfolio to show technical knowledge, education, projects, and experience.</p>
 
         </div>
 
-        <div class = "contact-me"> <!--* Ext. Soft. Hyperlinks-->
-    
-             <a class = "secondary-hyperlink" href = "https://github.com/armando-adorno">
-                <img src = "media/Octocat.png" alt = "GitHub logo" class = "outer-brand">
-             </a>
+        <div class = "myLinks"> <!--* Ext. Soft. Hyperlinks-->
+
+
+            <a class = "externalLink" href = "https://github.com/armando-adorno">
+                <img class = "hyperlinkImage" src = "media/Octocat.png" alt = "GitHub logo" class = "outer-brand">
+            </a>
+            <a class = "externalLink" href = "https://www.linkedin.com/in/armando-adorno">
+                <img class = "hyperlinkImage" src = "media/LinkedIn-Blue-128-Γö¼┬½@2x.png" alt = "GitHub logo" class = "outer-brand">
+            </a>
 
         </div>
-    
+
         <p id = "copyrigth">© 2023 Armando Adorno</p>
-     
-    </footer>
 
-    </div>
+    </footer>
 
     <script src = "main.js"></script>
 
