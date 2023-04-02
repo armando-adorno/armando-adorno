@@ -218,6 +218,10 @@ footer
     border-bottom-width: 3px;
     border-bottom-color: black;
 }
+.selfRegulated
+{
+    background-color: yellow;
+}
 .overlayContainer
 {
     position: relative;
