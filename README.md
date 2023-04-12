@@ -19,16 +19,16 @@
 
 <p align ="center">
 
-  <img src = "media/html.png" height = 40 hspace = 10>
-  <img src = "media/css.png" height=40 hspace=10> 
-  <img src = "media/javascript.png" height = 40 hspace = 10>
-  <img src = "media/python.png" height = 40 hspace = 10>
-  <img src = "media/c++.png" height = 40 hspace = 10>
-  <img src = "media/java.png" height = 40 hspace = 10><br>
-  <img src = "media/bootstrap.png" height = 40 hspace = 10>
-  <img src = "media/react.png" height = 40 hspace = 10>
-  <img src = "media/sql.png" height = 40 hspace = 10>
-  <img src = "media/json-black.png" height = 40 hspace = 10>
+  <img src = "media/icons/html.png" height = 40 hspace = 10>
+  <img src = "media/icons/css.png" height=40 hspace=10> 
+  <img src = "media/icons/javascript.png" height = 40 hspace = 10>
+  <img src = "media/icons/python.png" height = 40 hspace = 10>
+  <img src = "media/icons/c++.png" height = 40 hspace = 10>
+  <img src = "media/icons/java.png" height = 40 hspace = 10><br>
+  <img src = "media/icons/bootstrap.png" height = 40 hspace = 10>
+  <img src = "media/icons/react.png" height = 40 hspace = 10>
+  <img src = "media/icons/sql.png" height = 40 hspace = 10>
+  <img src = "media/icons/json.png" height = 40 hspace = 10>
   
 </p>
 
@@ -36,13 +36,13 @@
 
 <p align ="center">
 
-  <img src = "media/git.png" height = 40 hspace = 10>
-  <img src = "media/github.png" height = 40 hspace = 10>
-  <img src = "media/adobe-xd.png" height = 40 hspace = 10>
-  <img src = "media/power-bi.png" height = 40 hspace = 10>
-  <img src = "media/visual-studio.png" height=40 hspace=10>
-  <img src="media/visual-studio-code.png" height=40 hspace=10>
-  <img src = "media/markdown.png" height = 40 hspace = 10>
+  <img src = "media/icons/git.png" height = 40 hspace = 10>
+  <img src = "media/icons/github.png" height = 40 hspace = 10>
+  <img src = "media/icons/adobe-xd.png" height = 40 hspace = 10>
+  <img src = "media/icons/power-bi.png" height = 40 hspace = 10>
+  <img src = "media/icons/visual-studio.png" height=40 hspace=10>
+  <img src="media/icons/visual-studio-code.png" height=40 hspace=10>
+  <img src = "media/icons/markdown.png" height = 40 hspace = 10>
 
 </p>
 
@@ -50,9 +50,9 @@
 
 <p align ="center">
 
-  <img src = "media/cctv.png" height = 40 hspace = 10>
-  <img src = "media/drone.png" height = 40 hspace = 10>
-  <img src = "media/pin.png" height = 40 hspace = 10>
+  <img src = "media/icons/cctv.png" height = 40 hspace = 10>
+  <img src = "media/icons/drone.png" height = 40 hspace = 10>
+  <img src = "media/icons/pin.png" height = 40 hspace = 10>
   
 </p>
 
@@ -60,17 +60,17 @@
 
 <p align ="center">
 
-  <img src = "media/microprocessor.png" height = 40 hspace = 10>
-  <img src = "media/arduino.png" height = 40 hspace = 10>
-  <img src = "media/server.png" height = 40 hspace = 10>
-  <img src = "media/camera.png" height = 40 hspace = 10>
+  <img src = "media/icons/microprocessor.png" height = 40 hspace = 10>
+  <img src = "media/icons/arduino.png" height = 40 hspace = 10>
+  <img src = "media/icons/server.png" height = 40 hspace = 10>
+  <img src = "media/icons/camera.png" height = 40 hspace = 10>
   
 </p>
 
 <p align = "center">
 
 <strong>Note:</strong> 
-<em>The programming languages, tools, and hardware specified is not linear. More at 
+<em>The programming languages, tools, and hardware specified is not linear (always learning based on projects/clients/industry needs). More at 
 <a align = "center">https://armando-adorno.github.io/armando-adorno/</a>
 </em>
 
