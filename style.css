@@ -97,7 +97,7 @@ footer
     margin-top: 2px;
     margin-bottom: 0;
 }
-.myLinks, .siteAbout, #copyrigth, .aboutMeInfo, .myPositionRole,.industryCat, .aboutMeText, .scientificField, .proficiencyHeading
+.myLinks, .siteAbout, #copyrigth,.aboutMeInfo, .myPositionRole,.industryCat, .aboutMeText, .scientificField, .proficiencyHeading,.thougth
 {
     text-align: center;
 }
@@ -339,11 +339,10 @@ body
 {
     color: black;
 }
-.mainHeading
+.mainHeading,.secondaryHeading
 {
     text-align: center;
     font-size: medium;
-    width: 100%;
 }
 .expertiseContainer
 {
@@ -397,6 +396,10 @@ body
 #textFocus
 {
     background-color: yellow;
+}
+#networkColorMap
+{
+    color: pink;
 }
 /** Computer Network Node 👆🏻*/
 
