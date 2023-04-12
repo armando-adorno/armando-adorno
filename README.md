@@ -2,7 +2,7 @@
 
 <div align = "center">
 
-<img src = "media/fpv-drone.png" alt = "engineer_armando" align = "center">
+<img src = "media/background-profiles/fpv-drone.png" alt = "engineer_armando" align = "center">
 
 </div>
 
